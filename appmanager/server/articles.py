@@ -13,7 +13,7 @@ def get_articles_from_api(page):
         'language': 'en',
         'page': page,
         'size': 10,
-        'apiKey': '9392d0dd-e231-49f4-a95a-1a969994a161'
+        'apiKey': 'c9ae261e-e1d6-416e-9158-57cf76b67d7d'
     }
 
     try:
