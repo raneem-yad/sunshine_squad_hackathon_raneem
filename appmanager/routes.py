@@ -31,3 +31,8 @@ def home():
         # res = jsonify({'error': str(e)}), 500
         data = {'error': str(e)}
     return render_template("home.html", result=data)
+
+
+@app.route('/game')
+def game():
+    return render_template('game-page.html')
