@@ -10,7 +10,20 @@
         <p>{{item.description}}</p>
 <!--	<li>{{item}}</li>-->
 	{% endfor %}
+    {% set valid_page = page is not none %}
+    {% if total_pages > 1 %}
+        <div>
+            {% if valid_page and page > 1 %}
+                <a href="/{{ page - 1 }}">Previous</a>
+            {% endif %}
 
+            Page {{ page }} of {{total_pages}}
+
+            {% if valid_page and page < total_pages %}
+                <a href="/{{  page + 1 }}">Next</a>
+            {% endif %}
+        </div>
+    {% endif %}
 
 
 {% endblock %}
