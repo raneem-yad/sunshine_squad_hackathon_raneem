@@ -1,4 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>testing the home page</h1>
+
+<!--ToDo : // check if there is no results or error then show message -->
+
+	{% for item in result %}
+        <img src="{{item.imageUrl}}" width ="350px" alt="">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+<!--	<li>{{item}}</li>-->
+	{% endfor %}
+
+
+
 {% endblock %}
