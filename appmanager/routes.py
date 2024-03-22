@@ -9,3 +9,7 @@ def home(page_index=0):
     page = page_index
     data = get_articles_from_api(page)
     return render_template("home.html", result=data, total_pages=10, page=page)
+
+@app.route("/game")
+def game():
+    return render_template("game-page.html")
