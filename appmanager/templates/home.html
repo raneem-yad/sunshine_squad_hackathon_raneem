@@ -2,16 +2,47 @@
 {% block content %}
 <h1>testing the home page</h1>
 
+
+<!--Banner-->
+    <div class="page-title">
+
+        <h1>Happy Days</h1>
+        <h5>We Have some good news for you</h5>
+    </div>
+    <!--Main-->
+    <div class="main">
+        <p class="page-description">
+            some good news for you
+
+        </p>
+
+        <div class="news">
+        {% for item in result %}
+            <a href="{{url_for('article_details',article_id=loop.index0)}}">
+                <figure class="news-page">
+                    <img class="news-image" src="{{item.imageUrl}}" alt="{{item.title}}">
+                    <h2 class="article-title">{{item.title}}</h2>
+                    <p class="news-title">{{item.description}}</p>
+                </figure>
+            </a>
+        {% endfor %}
+        </div>
+
+        <div class="container">
+            <p class="emoji-title">Choose your emoji and get insparation</p>
+            <div id ="big-emoji">😄</div>
+
+            <div class="small-emojis">
+                <span class="emoji" onclick="showPicture('🌞')">🌞</span>
+                <span class="emoji" onclick="showPicture('😄')">😄</span>
+                <span class="emoji" onclick="showPicture('🌈')">🌈</span>
+            </div>
+        </div>
+
+    </div>
 <!--ToDo : // check if there is no results or error then show message -->
 
-	{% for item in result %}
-    <a href="{{url_for('article_details',article_id=loop.index0)}}">
-        <img src="{{item.imageUrl}}" width ="350px" alt="">
-        <h2>{{item.title}}</h2>
-        <p>{{item.description}}</p>
-        <!-- <li>{{item}}</li> -->
-    </a>
-	{% endfor %}
+
     {% set valid_page = page is not none %}
     {% if total_pages > 1 %}
         <div>
