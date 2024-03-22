@@ -187,9 +187,14 @@ table {
 }
 
 .news-title {
+  visibility: hidden;
   font-size: 0.8rem;
   color: rgb(20, 20, 20);
   max-width: 25rem;
+}
+/* Hover effect to show the news title */
+.article-title:hover + .news-title {
+  visibility: visible;
 }
 
 /* emoji */
