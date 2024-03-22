@@ -89,6 +89,35 @@ table {
 }
 
 
+/* First row */
+#game-table tr:nth-child(1) td:nth-child(1),
+#game-table tr:nth-child(1) td:nth-child(2),
+#game-table tr:nth-child(1) td:nth-child(3){
+
+    border-top: none
+}
+/* last row */
+#game-table tr:nth-child(3) td:nth-child(1),
+#game-table tr:nth-child(3) td:nth-child(2),
+#game-table tr:nth-child(3) td:nth-child(3){
+
+    border-bottom: none
+}
+/* left side */
+#game-table tr:nth-child(1) td:nth-child(1),
+#game-table tr:nth-child(2) td:nth-child(1),
+#game-table tr:nth-child(3) td:nth-child(1){
+
+    border-left: none
+}
+/* right side */
+#game-table tr:nth-child(1) td:nth-child(3),
+#game-table tr:nth-child(2) td:nth-child(3),
+#game-table tr:nth-child(3) td:nth-child(3){
+
+    border-right: none
+}
+
 /* News */
 
 .news {
