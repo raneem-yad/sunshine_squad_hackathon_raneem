@@ -21,13 +21,20 @@ body {
     font-family: "Darumadrop One", sans-serif;
 }
 
-/* Game table
+/* Game table */
 #game-table{
     width:80%;
     margin:auto;
     height:500px;
 }
-*/
+
+.hidden{
+    display: none;
+}
+
+#message{
+    height:50px;
+}
 
 #game-table td{
     border-style: solid;
