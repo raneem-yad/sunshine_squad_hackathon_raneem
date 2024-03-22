@@ -35,9 +35,9 @@ def get_articles_from_api(page):
         # Taking the first 6 articles
         data = articles
         # data = get_articles_by_positivity(articles)
-        print("here")
-        print(response)
-        print(f"data after  is ${articles[0]} and data length is ${len(articles)}")
+        # print("here")
+        # print(response)
+        # print(f"data after  is ${articles[0]} and data length is ${len(articles)}")
     except requests.exceptions.RequestException as e:
         # res = jsonify({'error': str(e)}), 500
         data = {'error': str(e)}

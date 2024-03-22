@@ -5,10 +5,12 @@
 <!--ToDo : // check if there is no results or error then show message -->
 
 	{% for item in result %}
+    <a href="{{url_for('article_details',article_id=loop.index0)}}">
         <img src="{{item.imageUrl}}" width ="350px" alt="">
         <h2>{{item.title}}</h2>
         <p>{{item.description}}</p>
-<!--	<li>{{item}}</li>-->
+        <!-- <li>{{item}}</li> -->
+    </a>
 	{% endfor %}
     {% set valid_page = page is not none %}
     {% if total_pages > 1 %}
