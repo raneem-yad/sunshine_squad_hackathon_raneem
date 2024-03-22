@@ -1,8 +1,25 @@
 /* Font for title */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
+/*This is the main stylesheet for the website. It is used to style the website and make it look more appealing to the user.*/
+/*This stylesheet is linked to all the pages of the website.*/
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: rgb(27, 26, 26);
+}
 
 body {
+  background-color: #f4f4f4;
+}
+
+
+
+/*body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,7 +27,7 @@ body {
 
 .main {
     flex: 1;
-}
+} */
 
 /* Navbar */
 .main-nav {
@@ -44,6 +61,29 @@ body {
 table {
     border-spacing: 0px;
 }
+
+/* Title and description */
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
+  text-align: center;
+}
+
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+
+/* News */
+
 
 /* News */
 
