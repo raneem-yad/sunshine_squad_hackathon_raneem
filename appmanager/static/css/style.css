@@ -1,12 +1,18 @@
 /* Font for title */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
+/* Navbar */
+.main-nav {
+ background-color: rgb(242, 242, 160);
+}
+
 .logo-title {
     font-family: "Darumadrop One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Game table */ 
 #game-table{
     width:80%;
     margin:auto;
