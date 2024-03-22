@@ -21,7 +21,7 @@
             <a href="{{url_for('article_details',article_id=loop.index0)}}">
                 <figure class="news-page">
                     <img class="news-image" src="{{item.imageUrl}}" alt="{{item.title}}">
-                    <h2>{{item.title}}</h2>
+                    <h2 class="article-title">{{item.title}}</h2>
                     <p class="news-title">{{item.description}}</p>
                 </figure>
             </a>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="container">
-            <p class="emoji-title">Choose your emoji and get insp
+            <p class="emoji-title">Choose your emoji and get insparation</p>
             <div id ="big-emoji">😄</div>
 
             <div class="small-emojis">

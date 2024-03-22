@@ -1,8 +1,31 @@
 /* Font for title */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
+/*This is the main stylesheet for the website. It is used to style the website and make it look more appealing to the user.*/
+/*This stylesheet is linked to all the pages of the website.*/
+
+/* Remove the default proprties */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: rgb(27, 26, 26);
+}
 
 body {
+  background-color: #f4f4f4;
+}
+
+
+
+/*body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,7 +33,7 @@ body {
 
 .main {
     flex: 1;
-}
+} */
 
 /* Navbar */
 .main-nav {
@@ -45,6 +68,27 @@ table {
     border-spacing: 0px;
 }
 
+/* Title and description */
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
+  text-align: center;
+}
+
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+
+
 /* First row */
 #game-table tr:nth-child(1) td:nth-child(1),
 #game-table tr:nth-child(1) td:nth-child(2),
@@ -73,6 +117,7 @@ table {
 
     border-right: none
 }
+
 /* News */
 
 .news {
@@ -83,7 +128,7 @@ table {
 }
 
 .news-page {
-  margin: 20px;
+  margin: 0 2rem;
 }
 
 
@@ -91,8 +136,22 @@ table {
   width: 240px;
   border: 2px solid rgb(20, 20, 20);
   border-radius: 4px;
+  
 }
 
+.article-title{
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: rgb(20, 20, 20);
+  max-width: 25rem;
+  
+}
+
+.news-title {
+  font-size: 0.8rem;
+  color: rgb(20, 20, 20);
+  max-width: 25rem;
+}
 
 /* emoji */
 
