@@ -23,6 +23,35 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Hero section */
+
+#hero {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-image {
+  height: 350px;
+  width: 100%;
+  background: url(../images/sunshinesquad.avif) no-repeat center center/cover;
+}
+ /* Add zoom to the hero image  and level zoom */
+#hero-image {
+  animation-name: zoom-hero;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-hero {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 
 
 /*body {
