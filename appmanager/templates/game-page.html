@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Game Page</h1>
-<h2 id="message">message</h2>
-<h2 id="score">0</h2>
-<button id='new-game' disabled>New Game</button>
-<table id="game-table">
+<h2 id="message"></h2>
+<h2>Score:<span id="score">0</span></h2>
+<button id='new-game'>New Game</button>
+<table id="game-table" class="hidden">
     <tr>
         <td id='0-0' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
         <td id='0-1' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
