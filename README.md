@@ -54,12 +54,10 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 - CSS: CSS (Cascading Style Sheets) was used for styling the HTML elements, creating a vibrant and cheerful design of Sunshine Squad.
 - JavaScript: JavaScript was used to add interactivity and dynamic features to the website, enhancing user experience with fun games and interactive elements.
 - Bootstrap: Bootstrap is a CSS framework used to design responsive and mobile-first websites. Sunshine Squad utilizes Bootstrap for its grid system and pre-designed components.
-- Emoji CSS Libraries: CSS libraries for emojis are used to incorporate emojis into the design theme of Sunshine Squad, adding playful and expressive elements to the user interface.
 
 ### Backend Technologies
-- Flask Session: Flask Session extension is used to manage user sessions and store session data securely.
 - Flask: Flask is a lightweight web framework for Python used to build the backend of the website and handle server-side logic.
-
+- Flask Session: Flask Session extension is used to manage user sessions and store session data securely.
 
 ### Deployment and Hosting
 - Heroku: Heroku is a cloud platform that enables deployment of web applications. Sunshine Squad is hosted on Heroku, providing scalability and reliability.
@@ -71,7 +69,20 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 - Responsive Design: Media queries and responsive design techniques are employed to ensure that Sunshine Squad is optimized for various devices and screen sizes.
 - Accessibility: Accessibility best practices are implemented to ensure that Sunshine Squad is usable and navigable for all users, including those with disabilities.
 - Testing Frameworks: Testing frameworks such as pytest are used to conduct unit tests, integration tests, and end-to-end tests to ensure the functionality and reliability of Sunshine Squad.
-- Third-Party APIs: Third-party APIs may be utilized to fetch positive news feeds, weather updates, or other external data sources to enrich the content and functionality of Sunshine Squad.
+- Third-Party APIs: Third-party APIs may be utilized to fetch positive news feeds, or other external data sources to enrich the content and functionality of Sunshine Squad. [Perigon](https://www.goperigon.com/).
 
 ## Credits
 Sources used
+
+https://www.goperigon.com/
+
+## Acknowledgements
+The Sunshine Squad is a dynamic group of individuals united by a shared passion for spreading joy and positivity through technology. Comprising talented developers, designers, and creative minds, the team has dedicated the last few days to crafting an online experience that serves as a beacon of happiness for its users. With a collective vision to create a digital oasis of positivity, the Sunshine Squad has worked tirelessly to develop a website that not only lifts moods but also brightens spirits. Through collaborative effort, innovative ideas, and a commitment to excellence, the team has transformed their vision into reality, delivering a platform that radiates warmth and boundless optimism.
+Thanks to
+- Alex Small
+- Arathi
+- Denis
+- Elina
+- Felipe
+- Mark young
+- Raneem
