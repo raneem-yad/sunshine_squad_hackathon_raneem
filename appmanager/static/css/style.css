@@ -3,10 +3,16 @@
 
 /*This is the main stylesheet for the website. It is used to style the website and make it look more appealing to the user.*/
 /*This stylesheet is linked to all the pages of the website.*/
+
+/* Remove the default proprties */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
-body {
-  max-width: 1200px;
-  margin: auto;
+body { 
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.4em;
@@ -93,7 +99,7 @@ table {
 }
 
 .news-page {
-  margin: 20px;
+  margin: 0 2rem;
 }
 
 
@@ -101,17 +107,21 @@ table {
   width: 240px;
   border: 2px solid rgb(20, 20, 20);
   border-radius: 4px;
+  
 }
 
 .article-title{
-  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-size: 1rem;
   color: rgb(20, 20, 20);
+  max-width: 25rem;
   
 }
 
 .news-title {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(20, 20, 20);
+  max-width: 25rem;
 }
 
 /* emoji */
