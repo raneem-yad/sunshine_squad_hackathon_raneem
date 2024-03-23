@@ -225,6 +225,10 @@ table {
   background-position: center;
   background-size: cover;
 }
+.emoji-bt {
+  background-position: center;
+  background-size: cover;
+}
 
 
 /* Title and description */
@@ -412,7 +416,7 @@ table {
   }
 }
 
-.emoji {
+.emoji-bt {
   font-size: 2.5rem;
   padding: 1rem;
   cursor: pointer;
