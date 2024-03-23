@@ -355,7 +355,22 @@ footer i {
   padding: 0 6rem;  
 }
 
+/* Contributors */
 
+.contributor{
+  background: url(../images/elina.png) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+
+}
+
+.circular-img {
+  border-radius: 50%;
+}
+
+.contributors-ul {
+  list-style: none;
+}
 
 /* Media queries */
 @media only screen and (max-width: 480px) {
