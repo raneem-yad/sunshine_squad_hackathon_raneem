@@ -34,3 +34,4 @@ const happyQuotes = [
     "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
     "The best way to get started is to quit talking and begin doing. - Walt Disney",
     "Don't watch the clock; do what it does. Keep going. - Sam Levenson",];
+    
