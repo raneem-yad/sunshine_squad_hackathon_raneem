@@ -25,11 +25,17 @@ def home(page_index=1):
 
     return render_template("home.html", result=articles_for_page, total_pages=num_pages, page=page_index)
 
-
 @app.route("/game")
 def game():
     return render_template("game-page.html")
 
+@app.route ("/tic_tac_toe")
+def tic_tac_toe():
+    return render_template("tic-tac-toe.html")
+
+@app.route ("/memory_game")
+def memory_game():
+    return render_template("memory-game.html")
 
 @app.route("/article/<int:article_id>")
 def article_details(article_id):
