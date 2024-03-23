@@ -63,6 +63,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
 /* Navbar */
 .main-nav {
  background-color: rgb(242, 242, 160);
@@ -130,6 +141,64 @@ table {
   margin-right:55px;
 }
 
+/* Emoji capture game */
+.scores-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-score {
+  margin-right: 20px;
+  margin: 20px;
+  text-align: center;
+  background: #ccc;
+  padding: 20px;
+  color: #000;
+}
+
+.time {
+  margin-right: 20px;
+  margin: 20px;
+  text-align: center;
+  background: #ccc;
+  padding: 20px;
+  color: #000;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background: rgb(61, 61, 61);
+}
+
+/* JavaScript */
+.emoji {
+  background-image: url("https://i.guim.co.uk/img/media/a1b7129c950433c9919f5670c92ef83aa1c682d9/55_344_1971_1183/master/1971.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=88ba2531f114b9b58b9cb2d8e723abe1");
+  background-position: center;
+  background-size: cover;
+}
+
+
 /* Title and description */
 .page-title {
   text-align: center;
@@ -188,6 +257,40 @@ table {
 
     border-right: none
 }
+
+/* Mood selector */
+
+.feeling {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.mood-selector {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.emoji-radio {
+  display: none;
+}
+
+.emoji-label {
+  display: inline-block;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+/* Make emoji bigger when hovered */
+.emoji-label:hover {
+  transform: scale(1.5);
+}
+
+.emoji-label::before {
+  content: attr(data-emoji);
+  padding: 0.5rem;
+}
+
 
 /* News */
 
@@ -310,7 +413,14 @@ footer i {
   padding: 0 6rem;  
 }
 
+/* Contributors */
+.circular-img {
+  border-radius: 50%;
+}
 
+.contributors-ul {
+  list-style: none;
+}
 
 /* Media queries */
 @media only screen and (max-width: 480px) {
