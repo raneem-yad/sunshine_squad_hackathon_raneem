@@ -25,5 +25,21 @@
   </a>
 </div>
 
+<!--Jokes-->
+<h1 class="mt-5 mb-4">Jokes List</h1>
+    <div class="row pl-4 pr-4">
+      {% for joke in jokes %}
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Joke {{loop.index}}</h5>
+            <p class="card-text">{{ joke[0] }}</p>
+            <p class="card-text">{{ joke[1] }}</p>
+          </div>
+        </div>
+      </div>
 
+      {% endfor %}
+      <!-- Add more jokes as needed -->
+    </div>
 {% endblock %}
