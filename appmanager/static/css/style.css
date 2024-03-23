@@ -40,9 +40,9 @@ body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 5rem;
-  height: 5rem;
-  background: url(../media/logo-smiley.png) no-repeat center center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/logo-smiley.png) no-repeat center center;
   cursor: pointer;
   background-size: cover;
 }
