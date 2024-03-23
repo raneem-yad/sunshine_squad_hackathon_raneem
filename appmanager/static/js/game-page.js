@@ -142,8 +142,8 @@ document.addEventListener("DOMContentLoaded", () =>{
                     chosenCell.style.color = 'blue'
                     chosenCell.classList.add('disabled')
                     chosenCell.childNodes[0].classList.add('fa-face-frown-open')
-                    // Check is computer has won
-                    if (detectWin(row, col) === 'comp-win'){
+                    // Check if computer has won
+                    if (detectWin(compRow, compCol) === 'comp-win'){
                         message.innerText = ('Sorry, computer won. Press new game button to try again.')
                     } else if (count === 9){
                         message.innerText = 'Draw'
