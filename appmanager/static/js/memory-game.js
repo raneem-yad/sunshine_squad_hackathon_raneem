@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let card of cards){
         card.addEventListener("click", () => {
             card.childNodes[0].classList.remove("fa-question")
-            card.childNodes[0].classList.add("fa-face-smile")
+            card.childNodes[0].classList.add(card.childNodes[0].id)
         })
     }
 })
