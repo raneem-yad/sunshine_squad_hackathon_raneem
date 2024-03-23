@@ -63,6 +63,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
 /* Navbar */
 .main-nav {
  background-color: rgb(242, 242, 160);
@@ -344,7 +355,14 @@ footer i {
   padding: 0 6rem;  
 }
 
+/* Contributors */
+.circular-img {
+  border-radius: 50%;
+}
 
+.contributors-ul {
+  list-style: none;
+}
 
 /* Media queries */
 @media only screen and (max-width: 480px) {

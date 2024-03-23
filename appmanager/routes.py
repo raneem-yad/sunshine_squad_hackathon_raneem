@@ -37,6 +37,11 @@ def tic_tac_toe():
 def memory_game():
     return render_template("memory-game.html")
 
+@app.route("/contributors")
+def contributors():
+    return render_template("contributors-page.html")
+
+
 @app.route("/article/<int:article_id>")
 def article_details(article_id):
     # gets especific article from session with index from article clicked
