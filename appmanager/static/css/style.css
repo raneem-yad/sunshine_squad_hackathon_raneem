@@ -266,13 +266,19 @@ table {
 
 
 /* Footer position at the bottom of the page */
-.footer {
+footer {
   background-color: rgb(242, 242, 160); 
   left: 0;
   bottom: 0;
-  width: 100%;
- 
+  width: 100%; 
   bottom: 0;
+}
+
+/* Footer styling icons */
+footer i {
+  font-size: 2rem;
+  padding: 2rem;
+  
 }
 
 
