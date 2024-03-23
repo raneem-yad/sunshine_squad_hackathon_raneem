@@ -62,14 +62,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}ay: flex;
-    flex-direction: column;
 }
-
-.main {
-    flex: 1;
-} */
-
 /* Navbar */
 .main-nav {
  background-color: rgb(242, 242, 160);
@@ -78,7 +71,7 @@ body {
 .logo-title {
     font-family: "Darumadrop One", sans-serif;
 }
-/* Game Area */
+
 /* Game table */
 #game-table{
     width:80%;
@@ -129,7 +122,7 @@ table {
   font-size: 0.8rem;
   padding: 30px;
 }
-
+/* Game Area */
 /* Center the game area on the page */
 #game-area {
   display: flex;
@@ -137,7 +130,7 @@ table {
   align-items: center;
   height: 100vh;
   display: block;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 /* First row */
