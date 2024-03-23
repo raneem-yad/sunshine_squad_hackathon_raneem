@@ -35,3 +35,8 @@ def article_details(article_id):
     # gets especific article from session with index from article clicked
     article = session.get("articles", {})[article_id]
     return render_template("article-details.html", article=article)
+
+
+@app.route("/gallery")
+def gallery():
+    return render_template("gallery.html")
