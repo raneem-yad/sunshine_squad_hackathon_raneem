@@ -11,7 +11,7 @@
    <div class="carousel-inner">
     {% for i in range(carousel_imgs | length) %}
     <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
-       <img class="d-block w-100" size="870px" src="{{url_for('static',filename='images/'+carousel_imgs[loop.index - 1])}}" alt="Slide {{ loop.index }}">
+       <img class="d-block w-100 img-fluid" size="870px" src="{{url_for('static',filename='images/'+carousel_imgs[loop.index - 1])}}" alt="Slide {{ loop.index }}">
     </div>
     {% endfor %}
   </div>
@@ -33,8 +33,13 @@
         <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title">Joke {{loop.index}}</h5>
-            <p class="card-text">{{ joke[0] }}</p>
-            <p class="card-text">{{ joke[1] }}</p>
+              <p class="clickable-paragraph" data-toggle="collapse" href="#collapse{{ loop.index }}"
+                 role="button" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                {{ joke[0] }}
+              </p>
+              <div class="collapse" id="collapse{{ loop.index }}">
+                <p>{{ joke[1] }}</p>
+              </div>
           </div>
         </div>
       </div>
