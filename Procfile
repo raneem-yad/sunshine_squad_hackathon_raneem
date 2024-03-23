@@ -1,1 +1,1 @@
-web: gunicorn sunshine_squad_hackathon.wsgi --log-file
+web: python app.py
