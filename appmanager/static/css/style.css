@@ -391,6 +391,17 @@ table {
   transform: scale(1.02);
 }
 
+/* Styles For funny cards */
+div.card-body {
+  
+  border: 0.1rem solid rgb(70, 68, 68);
+    box-shadow: 0.2rem 0.2rem;
+    border-radius: 0.3rem;
+ 
+}
+
+
+
 
 
 /* emoji */
