@@ -17,16 +17,22 @@
 </div>
 
 
-<div class="news">
-    {% for item in result %}
-    <a href="{{url_for('article_details',article_id=loop.index0)}}">
-        <figure class="news-page">
-            <img class="news-image" src="{{item.imageUrl}}" alt="{{item.title}}">
-            <h2 class="article-title">{{item.title}}</h2>
-            <p class="news-title">{{item.description}}</p>
-        </figure>
-    </a>
-    {% endfor %}
+<div class="container-fluid my-3">
+    <div class="row">
+        {% for item in result %}
+        <div class="col-12 col-md-4 col-xl-3 my-2">
+            <div class="card shadow h-100 p-3 col-12">
+                <a href="{{url_for('article_details',article_id=loop.index0)}}">
+                    <figure class="news-page m-auto">
+                        <img class="news-image" src="{{item.imageUrl}}" alt="{{item.title}}">
+                        <figcaption class="caption">{{item.authorsByline}} - {{ item.source.domain }}</figcaption>
+                        <h2 class="article-title">{{item.title}}</h2>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
 <div class="container">
