@@ -356,14 +356,6 @@ footer i {
 }
 
 /* Contributors */
-
-.contributor{
-  background: url(../images/elina.png) no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-
-}
-
 .circular-img {
   border-radius: 50%;
 }
