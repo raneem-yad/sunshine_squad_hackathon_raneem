@@ -16,7 +16,7 @@
 <body>
     <!-- Main Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light border border-warning main-nav">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{url_for('home')}}">
                 <h1 class="logo-title">    
                     <font color="#FF2626">S</font>
                     <font color="#252A34">U</font>
@@ -42,7 +42,7 @@
                 <a class="nav-link btn" href="#"><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item form-inline btn btn-warning mr-lg-1 py-1">
-                <a class="nav-link" href="#">Happy Articles</a>
+                <a class="nav-link" href="{{url_for('home')}}">Happy Articles</a>
                 </li>
                 <li class="nav-item form-inline btn btn-warning">
                 <a class="nav-link" href="{{url_for('game')}}">Happy Games</a>
