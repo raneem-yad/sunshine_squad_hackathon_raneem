@@ -396,25 +396,15 @@ div.card-body {
   
   border: 0.1rem solid rgb(70, 68, 68);
     box-shadow: 0.2rem 0.2rem;
-    border-radius: 0.3rem;
- 
+    border-radius: 0.3rem; 
 }
 
-
-
-
-
 /* emoji */
-
 
 #big-emoji {
   font-size: 5rem;
   padding: 2rem;
   left: auto;
-
-
-
-
   animation: bounce 1s 3;
 }
 
@@ -481,6 +471,10 @@ footer i {
    .mb-4 {
     font-size: 2rem;
    }
+   #carusel-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 580px) {
