@@ -1,6 +1,7 @@
 from flask import render_template, session
 from appmanager import app
 from appmanager.server.articles import get_articles_from_api, get_data_from_demo
+from appmanager.server.demo_data import jokes
 
 
 @app.route("/")
@@ -12,7 +13,7 @@ def home(page_index=1):
     session['articles'] = data
     # Define pagination parameters
     items_per_page = 6
-    num_pages= int(len(data) / items_per_page)
+    num_pages = int(len(data) / items_per_page)
 
     # Calculate start and end indices for pagination
     start_index = (page_index - 1) * items_per_page
@@ -35,3 +36,8 @@ def article_details(article_id):
     # gets especific article from session with index from article clicked
     article = session.get("articles", {})[article_id]
     return render_template("article-details.html", article=article)
+
+
+@app.route("/gallery")
+def gallery():
+    return render_template("gallery.html", jokes=jokes)

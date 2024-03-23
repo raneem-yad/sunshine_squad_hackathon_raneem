@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% set carousel_imgs = ['img1.webp','img2.webp','img3.webp','img4.webp','img5.webp'] %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for i in range(carousel_imgs | length) %}
+    <li data-target="#carouselExampleIndicators" data-slide-to="{{i}}"  {% if loop.index == 1 %}class="active"{% endif %}></li>
+    {% endfor %}
+  </ol>
+   <div class="carousel-inner">
+    {% for i in range(carousel_imgs | length) %}
+    <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+       <img class="d-block w-100" size="870px" src="{{url_for('static',filename='images/'+carousel_imgs[loop.index - 1])}}" alt="Slide {{ loop.index }}">
+    </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--Jokes-->
+<h1 class="mt-5 mb-4">Jokes List</h1>
+    <div class="row pl-4 pr-4">
+      {% for joke in jokes %}
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Joke {{loop.index}}</h5>
+            <p class="card-text">{{ joke[0] }}</p>
+            <p class="card-text">{{ joke[1] }}</p>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+      <!-- Add more jokes as needed -->
+    </div>
+{% endblock %}
