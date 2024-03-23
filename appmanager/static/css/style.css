@@ -63,6 +63,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
 /* Navbar */
 .main-nav {
  background-color: rgb(242, 242, 160);
