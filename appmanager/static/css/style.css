@@ -189,6 +189,40 @@ table {
     border-right: none
 }
 
+/* Mood selector */
+
+.feeling {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.mood-selector {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.emoji-radio {
+  display: none;
+}
+
+.emoji-label {
+  display: inline-block;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+/* Make emoji bigger when hovered */
+.emoji-label:hover {
+  transform: scale(1.5);
+}
+
+.emoji-label::before {
+  content: attr(data-emoji);
+  padding: 0.5rem;
+}
+
+
 /* News */
 
 .news-page .news-image {
