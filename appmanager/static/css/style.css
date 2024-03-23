@@ -263,7 +263,10 @@ table {
   padding-top: 1rem;
 }
 
-
+/***     Gallery Page ***/
+.carousel-inner img{
+    height: 80vh
+}
 
 /* Footer position at the bottom of the page */
 footer {
