@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+
 
     function showPicture(emoji) {
         const pictureContainer = document.getElementById("big-emoji");
@@ -102,6 +102,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
+// Function to set mood background color
+function setMoodColor(value) {
+    var color = 'hsl(' + value + ', 100%, 50%)';
+    document.body.style.backgroundColor = color;
+  }
 
+  var slider = document.getElementById("moodSlider");
+  slider.oninput = function() {
+    setMoodColor(this.value);
+  }
 
-});
