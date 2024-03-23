@@ -63,17 +63,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/*body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main {
-    flex: 1;
-} */
-
 /* Navbar */
 .main-nav {
  background-color: rgb(242, 242, 160);
@@ -133,7 +122,16 @@ table {
   font-size: 0.8rem;
   padding: 30px;
 }
-
+/* Game Area */
+/* Center the game area on the page */
+#game-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: block;
+  padding-top: 5rem;
+}
 
 /* First row */
 #game-table tr:nth-child(1) td:nth-child(1),
@@ -229,7 +227,7 @@ table {
   transform: scale(1.02);
 }
 
-/* emoji */
+
 
 /* emoji */
 
@@ -267,10 +265,19 @@ table {
 
 
 
-/* Footer */
-.footer {
-    background-color: rgb(242, 242, 160);
-    bottom: 0%;
+/* Footer position at the bottom of the page */
+footer {
+  background-color: rgb(242, 242, 160); 
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  bottom: 0;
+}
+
+/* Footer styling icons */
+footer i {
+  font-size: 2rem;
+  padding: 0 6rem;  
 }
 
 
