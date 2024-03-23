@@ -26,13 +26,14 @@
 </div>
 
 <!--Jokes-->
-<h1 class="mt-5 mb-4">Jokes List</h1>
+<h1 class="mt-5 mb-4"> 🤣 Funny Corner 🤣</h1>
     <div class="row pl-4 pr-4">
-      {% for joke in jokes %}
+      {% for joke, emoji  in data %}
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title">Joke {{loop.index}}</h5>
+<!--            <h5 class="card-title">Joke {{loop.index}}</h5>-->
+            <h5 class="card-title"> {{emoji}}</h5>
               <p class="clickable-paragraph" data-toggle="collapse" href="#collapse{{ loop.index }}"
                  role="button" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
                 {{ joke[0] }}

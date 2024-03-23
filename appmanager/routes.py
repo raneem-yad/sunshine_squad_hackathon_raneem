@@ -1,7 +1,7 @@
 from flask import render_template, session
 from appmanager import app
 from appmanager.server.articles import get_articles_from_api, get_data_from_demo
-from appmanager.server.demo_data import jokes
+from appmanager.server.constants import jokes, happy_emojis
 
 
 @app.route("/")
@@ -40,4 +40,5 @@ def article_details(article_id):
 
 @app.route("/gallery")
 def gallery():
-    return render_template("gallery.html", jokes=jokes)
+    jokes_with_emojis = list(zip(jokes, happy_emojis))
+    return render_template("gallery.html", data = jokes_with_emojis)
