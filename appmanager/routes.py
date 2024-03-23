@@ -37,6 +37,10 @@ def tic_tac_toe():
 def memory_game():
     return render_template("memory-game.html")
 
+@app.route ("/emoji_catcher")
+def emoji_catcher():
+    return render_template("emoji-catcher.html")
+
 @app.route("/contributors")
 def contributors():
     return render_template("contributors-page.html")
