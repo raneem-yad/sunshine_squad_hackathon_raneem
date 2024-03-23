@@ -104,7 +104,7 @@ body {
     border-color: black;
     width:33.33%;
     height:33.33%;
-      margin:0 0 0 0;
+    margin:0 0 0 0;
     font-size:xx-large;
     text-align: center;
     color:white;
@@ -152,7 +152,8 @@ table {
   margin-right: 20px;
   margin: 20px;
   text-align: center;
-  background: #ccc;
+  background: #96f8c2;
+  border-radius: 10px;
   padding: 20px;
   color: #000;
 }
@@ -161,7 +162,8 @@ table {
   margin-right: 20px;
   margin: 20px;
   text-align: center;
-  background: #ccc;
+  background: #96f8c2;
+  border-radius: 10px;
   padding: 20px;
   color: #000;
 }
@@ -173,13 +175,13 @@ table {
 }
 
 .grid {
-  width: 90%;
+  width: 80%;
   height: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(253, 252, 252);
   margin-top: 2rem;
   padding: 20px;
 }
@@ -188,7 +190,8 @@ table {
   height: 200px;
   width: 200px;
   margin: 10px;
-  background: rgb(61, 61, 61);
+  border-radius: 30px;
+  background: rgb(248, 165, 165);
 }
 
 /* JavaScript */
