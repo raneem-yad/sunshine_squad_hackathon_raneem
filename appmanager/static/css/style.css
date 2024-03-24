@@ -228,14 +228,7 @@ table {
   background-position: center;
   background-size: cover;
 }
-<<<<<<< HEAD
 /* Game button styling */
-=======
-.emoji-bt {
-  background-position: center;
-  background-size: cover;
-}
->>>>>>> 1536e0468c5d77b72176e5326f4e74c2cb28ead0
 
 .flex-container {
   display: flex;
@@ -537,4 +530,5 @@ footer i {
     .logo-title {
         font-size: 90%;
     }
+}
 }
