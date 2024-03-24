@@ -1,29 +1,10 @@
 {% extends "base.html" %}
+<div class="main">
 {% block content %}
-<main>
-    <div class="row flex-container">
-        <div class="col">
-            <a href="{{url_for('tic_tac_toe')}}" class="game-button">
-                <button>
-                    Tic Tac Toe
-                </button>
-        </div>
-        <div class="col">
-            </a>
-            <a href="{{url_for('memory_game')}}" class="game-button">
-                <button>
-                    Memory Game
-                </button>
-            </a>
-        </div>
-        <div class="col">
-            <a href="{{url_for('emoji_catcher')}}" class="game-button">
-                <button>
-                    Emoji Catcher
-                </button>
-            </a>
-        </div>
-    </div>
-</main>
-
+<div class="container mt-4">
+    <a href="{{url_for('tic_tac_toe')}}" class="btn btn-warning">Tic Tac Toe</a>
+    <a href="{{url_for('memory_game')}}" class="btn btn-warning">Memory Game</a>
+    <a href="{{url_for('emoji_catcher')}}" class="btn btn-warning">Emoji Cathcer</a>
+</div>
 {% endblock %}
+</div>
