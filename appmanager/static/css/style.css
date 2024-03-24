@@ -228,19 +228,9 @@ table {
   background-position: center;
   background-size: cover;
 }
+
+
 /* Game button styling */
-
-.flex-container {
-  display: flex;
-  height: 50%;
-}
-
-.col-xl-3 {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  padding: 0 15px;
-}
-
 .game-button {
   display: inline-block;
   margin: 10px;
