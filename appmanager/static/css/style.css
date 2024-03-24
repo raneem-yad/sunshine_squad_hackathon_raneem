@@ -230,7 +230,7 @@ table {
 }
 
 
-/* Game button styling */
+/* Game button styling
 .game-button {
   display: inline-block;
   margin: 10px;
@@ -253,23 +253,29 @@ table {
   background-color: #0056b3;
 }
 
-/* Style for Tic Tac Toe button */
+/* Style for Tic Tac Toe button 
 .game-button:nth-of-type(1) button {
   background-image: url(../images/tictactoe.jpg);
   background-size: cover;
 }
 
-/* Style for Memory Game button */
+/* Style for Memory Game button 
 .game-button:nth-of-type(2) button {
   background-image: url(../images/memorygame.jpg);
   background-size: cover;
 }
 
-/* Style for Emoji Catcher button */
+/* Style for Emoji Catcher button 
+.tic-tac-toe {
+  background-image: url(../images/tictactoe.jpg);
+  background-size: cover;
+}
 .game-button:nth-of-type(3) button {
   background-image: url(../images/emojicatcher.jpg);
   background-size: cover;
 }
+
+*/
 
 /* Title and description */
 .page-title {
@@ -503,6 +509,12 @@ footer i {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .container-game{
+    margin-bottom: 5%;
+}
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px),(orientation: portrait) {
   .news-page .news-image {
      width: 95%;
@@ -515,6 +527,7 @@ footer i {
     height: auto;
     object-fit: contain;
 }
+
 
 @media screen and (max-width: 580px) {
     .logo-title {
