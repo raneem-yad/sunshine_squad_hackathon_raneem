@@ -21,7 +21,32 @@ body {
 
 body {
   background-color: #f4f4f4;
+  transition: background-color 0.5s;
 }
+
+/* Slider mood changer for background color */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 1.5rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/logo-smiley.png) no-repeat center center;
+  cursor: pointer;
+  background-size: cover;
+}
+
 
 /* Hero section */
 
@@ -63,6 +88,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
 /* Navbar */
 .main-nav {
  background-color: rgb(242, 242, 160);
@@ -72,7 +108,7 @@ body {
     font-family: "Darumadrop One", sans-serif;
 }
 
-/* Game table */
+/* Tic Tac Toe */
 #game-table{
     width:80%;
     margin:auto;
@@ -93,7 +129,7 @@ body {
     border-color: black;
     width:33.33%;
     height:33.33%;
-      margin:0 0 0 0;
+    margin:0 0 0 0;
     font-size:xx-large;
     text-align: center;
     color:white;
@@ -102,6 +138,101 @@ body {
 table {
     border-spacing: 0px;
 }
+
+
+/* Memory Game */
+#memory-game{
+  height:400px;
+  width:75%;
+  margin:auto;
+  font-size:xx-large;
+  max-width:500px;
+}
+
+#memory-game td:hover{
+  cursor: pointer;  
+}
+
+.not-found{
+  color:rgb(166, 166, 166);
+}
+
+#memory-game i{
+  width:80%;
+  padding-top:15%;
+  height:80%;
+  border-width: 2px;
+  border-radius:.4rem;
+  border-style: solid;
+  background-color: rgb(78, 114, 190);
+  margin-left:55px;
+  margin-right:55px;
+}
+
+/* Emoji capture game */
+.scores-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-score {
+  margin-right: 20px;
+  margin: 20px;
+  text-align: center;
+  background: #96f8c2;
+  border-radius: 10px;
+  padding: 20px;
+  color: #000;
+}
+
+.time {
+  margin-right: 20px;
+  margin: 20px;
+  text-align: center;
+  background: #96f8c2;
+  border-radius: 10px;
+  padding: 20px;
+  color: #000;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 252, 252);
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 30px;
+  background: rgb(248, 165, 165);
+}
+
+/* JavaScript */
+.emoji {
+  background-image: url("https://i.guim.co.uk/img/media/a1b7129c950433c9919f5670c92ef83aa1c682d9/55_344_1971_1183/master/1971.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=88ba2531f114b9b58b9cb2d8e723abe1");
+  background-position: center;
+  background-size: cover;
+}
+.emoji-bt {
+  background-position: center;
+  background-size: cover;
+}
+
 
 /* Title and description */
 .page-title {
@@ -162,10 +293,46 @@ table {
     border-right: none
 }
 
+/* Mood selector */
+
+.feeling {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.mood-selector {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.emoji-radio {
+  display: none;
+}
+
+.emoji-label {
+  display: inline-block;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+/* Make emoji bigger when hovered */
+.emoji-label:hover {
+  transform: scale(1.5);
+}
+
+.emoji-label::before {
+  content: attr(data-emoji);
+  padding: 0.5rem;
+}
+
+
 /* News */
 
 .news-page .news-image {
   width: 100%;
+  max-height: 200px;
+  object-fit: cover;
   border-radius: 4px; 
 }
 
@@ -227,19 +394,20 @@ table {
   transform: scale(1.02);
 }
 
-
+/* Styles For funny cards */
+div.card-body {
+  
+  border: 0.1rem solid rgb(70, 68, 68);
+    box-shadow: 0.2rem 0.2rem;
+    border-radius: 0.3rem; 
+}
 
 /* emoji */
-
 
 #big-emoji {
   font-size: 5rem;
   padding: 2rem;
   left: auto;
-
-
-
-
   animation: bounce 1s 3;
 }
 
@@ -252,7 +420,7 @@ table {
   }
 }
 
-.emoji {
+.emoji-bt {
   font-size: 2.5rem;
   padding: 1rem;
   cursor: pointer;
@@ -280,10 +448,17 @@ footer {
 /* Footer styling icons */
 footer i {
   font-size: 2rem;
-  padding: 0 6rem;  
+  padding: 0 5rem;  
 }
 
+/* Contributors */
+.circular-img {
+  border-radius: 50%;
+}
 
+.contributors-ul {
+  list-style: none;
+}
 
 /* Media queries */
 @media only screen and (max-width: 480px) {
@@ -296,6 +471,13 @@ footer i {
   .news-page .news-image {
      width: 95%;
    }
+   .mb-4 {
+    font-size: 2rem;
+   }
+   #carusel-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 580px) {

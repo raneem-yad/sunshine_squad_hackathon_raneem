@@ -11,9 +11,9 @@ def get_articles_by_positivity(articles):
         # positivity_measure = article.get('sentiment', []).get('positive', 0)
 
         if 'sentiment' in article:
-            print(article["sentiment"])
+            # print(article["sentiment"])
             positivity_measure = article['sentiment']['positive']
-            print(f"positivity is {positivity_measure} for article with title {article['title']}")
+            # print(f"positivity is {positivity_measure} for article with title {article['title']}")
             if positivity_measure > 0.5:
                 positive_articles.append(article)
 
@@ -39,6 +39,7 @@ def get_articles_from_api():
     params = {
         # 'from': '2024-02-20',
         'q': create_query(happy_keywords),  # Keywords for happy news
+        'topic': 'Good News',
         'sourceGroup': 'top1000',
         'language': 'en',
         # 'page': 1,
@@ -58,6 +59,7 @@ def get_articles_from_api():
         # Taking the first 6 articles
         data = articles
         # data = get_articles_by_positivity(articles)
+
 
         # print(response)
         print("---------------------------------------------here")

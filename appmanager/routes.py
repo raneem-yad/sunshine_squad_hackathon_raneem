@@ -7,10 +7,14 @@ from appmanager.server.constants import jokes, happy_emojis
 @app.route("/")
 @app.route("/<int:page_index>")
 def home(page_index=1):
-    # data  = get_articles_from_api()
-    data = get_data_from_demo()
-    # stores all articles in session
-    session['articles'] = data
+    if 'articles' in session:
+        data = session['articles']
+    else:
+        # data = get_data_from_demo()
+        data = get_articles_from_api(page_index)
+        # stores all articles in session
+        session['articles'] = data
+    # data = get_data_from_demo()
     # Define pagination parameters
     items_per_page = 8
     num_pages = int(len(data) / items_per_page)
@@ -29,11 +33,26 @@ def home(page_index=1):
     # print(f"print ${start_index} and end ${end_index} and len ${len(data)}")
     print("-------------------------------------")
     return render_template("home.html", result=articles_for_page, total_pages=num_pages, page=page_index)
-    # return "Hello"
 
 @app.route("/game")
 def game():
     return render_template("game-page.html")
+
+@app.route ("/tic_tac_toe")
+def tic_tac_toe():
+    return render_template("tic-tac-toe.html")
+
+@app.route ("/memory_game")
+def memory_game():
+    return render_template("memory-game.html")
+
+@app.route ("/emoji_catcher")
+def emoji_catcher():
+    return render_template("emoji-catcher.html")
+
+@app.route("/contributors")
+def contributors():
+    return render_template("contributors-page.html")
 
 
 @app.route("/article/<int:article_id>")

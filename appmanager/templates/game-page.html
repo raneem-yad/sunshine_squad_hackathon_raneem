@@ -1,36 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 <main>
-    <div id="game-area">
-        <h1>Game Page</h1>
-        <h2 id="message"></h2>
-        <h2>Score:<span id="score">0</span></h2>
-        <button id='new-game'>New Game</button>
-        <table id="game-table" class="hidden">
-            <tr>
-                <td id='0-0' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-                <td id='0-1' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-                <td id='0-2' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-            </tr>
-            <tr>
-                <td id='1-0' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-                <td id='1-1' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-                <td id='1-2' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-            </tr>
-            <tr>
-                <td id='2-0' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-                <td id='2-1' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-                <td id='2-2' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
-            </tr>
-        </table>
-    </div>
+    <a href="{{url_for('tic_tac_toe')}}">
+        <button>
+            Tic Tac Toe
+        </button>
+    </a>
+    <a href="{{url_for('memory_game')}}">
+        <button>
+            Memory Game
+        </button>
+    </a>
+    <a href="{{url_for('emoji_catcher')}}">
+        <button>
+            Emoji Catcher
+        </button>
+    </a>
 </main>
-
-{% endblock %}
-
-
-{% block contentscript %}
-
-<script src="../static/js/game-page.js"></script>
 
 {% endblock %}
