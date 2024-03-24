@@ -26,29 +26,34 @@ def home(page_index=1):
     # Extract articles for the current page
     print(type(data))
     print(f"type after list ${type(list(data))}")
-    print(f"first item from list { list(data)[0]}")
+    print(f"first item from list {list(data)[0]}")
     print(f"len item from list {len(list(data))}")
-    articles_for_page =  data[start_index:end_index]
+    articles_for_page = data[start_index:end_index]
 
     # print(f"print ${start_index} and end ${end_index} and len ${len(data)}")
     print("-------------------------------------")
     return render_template("home.html", result=articles_for_page, total_pages=num_pages, page=page_index)
 
+
 @app.route("/game")
 def game():
     return render_template("game-page.html")
 
-@app.route ("/tic_tac_toe")
+
+@app.route("/tic_tac_toe")
 def tic_tac_toe():
     return render_template("tic-tac-toe.html")
 
-@app.route ("/memory_game")
+
+@app.route("/memory_game")
 def memory_game():
     return render_template("memory-game.html")
 
-@app.route ("/emoji_catcher")
+
+@app.route("/emoji_catcher")
 def emoji_catcher():
     return render_template("emoji-catcher.html")
+
 
 @app.route("/contributors")
 def contributors():
@@ -65,4 +70,4 @@ def article_details(article_id):
 @app.route("/gallery")
 def gallery():
     jokes_with_emojis = list(zip(jokes, happy_emojis))
-    return render_template("gallery.html", data = jokes_with_emojis)
+    return render_template("gallery.html", data=jokes_with_emojis)
