@@ -1,9 +1,11 @@
+
 <h1 align="center"><strong> :smiley: Sunshine Scoop :smiley: </strong>
 
 </h1>
 
 # SUBMISSION
 ![SunshineScoop](appmanager/static/images/mainimage.jpg)
+
 
 
 ## Deployment
@@ -77,8 +79,6 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 
 # Features
 
-## News Feed
-
 A mood dial to alter the color depending on your current diposition. And an interactive display of emojis where the user can recieve various uplifting quotes to brighten mood.
 
 ![Mood Dial with Quotes](/appmanager/static/images/mooddialandquotes.jpg)
@@ -94,21 +94,6 @@ The user has a choice of three games to highten adreniline.
 A littany of jokes and cute animals to provide humour and capture the heart of any user.
 
 ![Funny Corner](/appmanager/static/images/funnycorner.jpg)
-
-## Bugs
-
-
-## Lighthouse
-
-![Lighthouse Desktop Score](documentation/testing/)
-
-## Validation Testing
-
-### HTML & CSS
-
-HTML & CSS testing was completed using [W3 Validator](https://validator.w3.org/)
-
-![HTML Validation completed](documentation/testing/)
 
 ## Credits
 Sources used

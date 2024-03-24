@@ -13,7 +13,7 @@ jokes = [
     ("What do you call cheese that isn't yours?", "Nacho cheese!"),
     ("How does a penguin build its house?", "Igloos it together!"),
     ("What did one ocean say to the other ocean?", "Nothing, they just waved!"),
-    ("Why did the golfer bring two pairs of pants?", "In case he got a hole in one!")
+    # ("Why did the golfer bring two pairs of pants?", "In case he got a hole in one!")
 ]
 
 happy_emojis = [
