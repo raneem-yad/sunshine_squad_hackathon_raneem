@@ -361,7 +361,7 @@ table {
   padding: 0.5rem;
 }
 
-a.nav-link, .btn {
+a.nav-link, .btn-warning {
   text-align: center;
   border: 0.1rem solid rgb(70, 68, 68);
   border-radius: 0.5rem;
