@@ -30,8 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         cardsSelected = []
                         // Update found items
                         foundItemsScore.innerText--
+                        if (foundItemsScore.innerText == 0){
+                            prompt.innerText = 'Well Done! You found all the happy items.'
+                        } else {
                         // Update prompt
                         prompt.innerText = 'Well Done! Keep clicking to reveal more cards.'
+                        }
                     } else {
                         // If cards dont match turn them over
                         prompt.innerText = 'Sorry, guess again! Cards turning over in '

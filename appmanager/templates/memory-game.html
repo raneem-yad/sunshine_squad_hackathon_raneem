@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
+<a href="{{url_for('game')}}" class="btn btn-warning go-back-game">Back to game selection</a>
+<main>
+    <div class="game-area">
+    <a href="{{url_for('memory_game')}}" class="btn btn-warning">New Game</a>
     <h3 id="memory-game-header">Click the cards below to match the happy icons!</h3>
     <div id="prompt"> </div><h4 id="counter"></h4>
+    
     <table id="memory-game">
         <tr>
             <td class="game-card"><i id="fa-face-smile-0" class="fa-solid fa-question"></i></td>
@@ -39,6 +44,8 @@
         <i id="fa-hand-peace" class="not-found fa-xl fa-solid fa-hand-peace"></i>
         <i id="fa-heart" class="not-found fa-xl fa-solid fa-heart"></i>
     </div>
+</div>
+</main>
 {% endblock %}
 
 
