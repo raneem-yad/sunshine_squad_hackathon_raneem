@@ -21,7 +21,32 @@ body {
 
 body {
   background-color: #f4f4f4;
+  transition: background-color 0.5s;
 }
+
+/* Slider mood changer for background color */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 1.5rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/logo-smiley.png) no-repeat center center;
+  cursor: pointer;
+  background-size: cover;
+}
+
 
 /* Hero section */
 
@@ -128,10 +153,13 @@ table {
   cursor: pointer;  
 }
 
+.not-found{
+  color:rgb(166, 166, 166);
+}
 
 #memory-game i{
   width:80%;
-  padding-top:25%;
+  padding-top:15%;
   height:80%;
   border-width: 2px;
   border-radius:.4rem;
@@ -200,7 +228,14 @@ table {
   background-position: center;
   background-size: cover;
 }
+<<<<<<< HEAD
 /* Game button styling */
+=======
+.emoji-bt {
+  background-position: center;
+  background-size: cover;
+}
+>>>>>>> 1536e0468c5d77b72176e5326f4e74c2cb28ead0
 
 .flex-container {
   display: flex;
@@ -350,6 +385,8 @@ table {
 
 .news-page .news-image {
   width: 100%;
+  max-height: 200px;
+  object-fit: cover;
   border-radius: 4px; 
 }
 
@@ -411,7 +448,13 @@ table {
   transform: scale(1.02);
 }
 
-
+/* Styles For funny cards */
+div.card-body {
+  
+  border: 0.1rem solid rgb(70, 68, 68);
+    box-shadow: 0.2rem 0.2rem;
+    border-radius: 0.3rem; 
+}
 
 /* emoji */
 
@@ -431,7 +474,7 @@ table {
   }
 }
 
-.emoji {
+.emoji-bt {
   font-size: 2.5rem;
   padding: 1rem;
   cursor: pointer;
@@ -458,7 +501,7 @@ footer {
 /* Footer styling icons */
 footer i {
   font-size: 2rem;
-  padding: 0 6rem;  
+  padding: 0 5rem;  
 }
 
 /* Contributors */
@@ -481,6 +524,13 @@ footer i {
   .news-page .news-image {
      width: 95%;
    }
+   .mb-4 {
+    font-size: 2rem;
+   }
+   #carusel-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 580px) {
