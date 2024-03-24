@@ -608,7 +608,7 @@ footer i {
     width: 90%;
     border-radius: 0.5rem;
   }
-  .container {
+  .container-emoji {
     display: block;
 
   }
@@ -617,6 +617,11 @@ footer i {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+  }
+  footer i {
+    font-size: 2rem;
+    padding: 0 2rem;
+    display: inline;
   }
 
 }

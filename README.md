@@ -1,11 +1,11 @@
 <h1 align="center"><strong> :smiley: Sunshine Scoop :smiley: </strong>
 
 </h1>
-![SunshineScoop](../static/images/mainimage.jpg)
-
-<img src="../static/images/mainimage.jpg" alt="SunshineScoop" width="1200"/>
 
 # SUBMISSION
+![SunshineScoop](appmanager/static/images/mainimage.jpg)
+
+
 ## Deployment
 The project is deployed and can be accessed at [March Hackathon-SunshineScoop](https://march-hackathon-sunshine-squad-e5b99e572892.herokuapp.com/).
 
