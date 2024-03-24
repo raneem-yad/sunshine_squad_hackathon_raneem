@@ -1,17 +1,13 @@
-
-<h3>Sunshine Squad</h3>
-<h4>Welcome to Sunshine Squad, your ultimate destination for boosting your mood! This website is designed to uplift your spirits by providing access to positive news feeds, fun games, and a vibrant design filled with emojis and sunshine-themed elements. With our creative use of CSS frameworks and Bootstrap, we've crafted an engaging and user-friendly experience that will brighten your day.</h4>
-<br>
-<h1 align="center"><strong> :smiley: World Happiness Day! :smiley: </strong>
+<h1 align="center"><strong> :smiley: Sunshine Scoop :smiley: </strong>
 
 </h1>
+![SunshineScoop](../static/images/mainimage.jpg)
 
-<img src="https://res.cloudinary.com/djdefbnij/image/upload/v1709637871/March_hackathon_banner_krwvza.jpg" alt="HackathonHappy" width="1200"/>
+<img src="../static/images/mainimage.jpg" alt="SunshineScoop" width="1200"/>
 
 # SUBMISSION
 ## Deployment
-#### _(please note, your team must also include the deployed links in the usual submission in Hackapp)_
-The project is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
+The project is deployed and can be accessed at [March Hackathon-SunshineScoop](https://march-hackathon-sunshine-squad-e5b99e572892.herokuapp.com/).
 
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
@@ -53,7 +49,7 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 - HTML: HTML (HyperText Markup Language) was used for creating the structure and content of web pages.
 - CSS: CSS (Cascading Style Sheets) was used for styling the HTML elements, creating a vibrant and cheerful design of Sunshine Squad.
 - JavaScript: JavaScript was used to add interactivity and dynamic features to the website, enhancing user experience with fun games and interactive elements.
-- Bootstrap: Bootstrap is a CSS framework used to design responsive and mobile-first websites. Sunshine Squad utilizes Bootstrap for its grid system and pre-designed components.
+- Bootstrap: Sunshine Squad utilizes Bootstrap for its grid system and pre-designed components.
 
 ### Backend Technologies
 - Flask: Flask is a lightweight web framework for Python used to build the backend of the website and handle server-side logic.
@@ -71,10 +67,53 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 - Testing Frameworks: Testing frameworks such as pytest are used to conduct unit tests, integration tests, and end-to-end tests to ensure the functionality and reliability of Sunshine Squad.
 - Third-Party APIs: Third-party APIs may be utilized to fetch positive news feeds, or other external data sources to enrich the content and functionality of Sunshine Squad. [Perigon](https://www.goperigon.com/).
 
+## Wireframes
+
+- Homepage Wireframe
+![Homepage Wireframe](readme/newwireframe1.png)
+
+- Create Booking Wireframe
+![Game Wireframe](readme/newwireframe2.png)
+
+# Features
+
+## News Feed
+
+A mood dial to alter the color depending on your current diposition. And an interactive display of emojis where the user can recieve various uplifting quotes to brighten mood.
+
+![Mood Dial with Quotes](/appmanager/static/images/mooddialandquotes.jpg)
+
+The user can search through positive news feeds to increase mood and faith in humanity.
+
+![News Feed](/appmanager/static/images/newsfeed.jpg)
+
+The user has a choice of three games to highten adreniline.
+
+![Happy Games](/appmanager/static/images/tictactoe.jpg)
+
+A littany of jokes and cute animals to provide humour and capture the heart of any user.
+
+![Funny Corner](/appmanager/static/images/funnycorner.jpg)
+
+## Bugs
+
+
+## Lighthouse
+
+![Lighthouse Desktop Score](documentation/testing/)
+
+## Validation Testing
+
+### HTML & CSS
+
+HTML & CSS testing was completed using [W3 Validator](https://validator.w3.org/)
+
+![HTML Validation completed](documentation/testing/)
+
 ## Credits
 Sources used
-
-https://www.goperigon.com/
+[Goperigon](https://www.goperigon.com/).
+[Adobe Stock](https://stock.adobe.com/).
 
 ## Acknowledgements
 The Sunshine Squad is a dynamic group of individuals united by a shared passion for spreading joy and positivity through technology. Comprising talented developers, designers, and creative minds, the team has dedicated the last few days to crafting an online experience that serves as a beacon of happiness for its users. With a collective vision to create a digital oasis of positivity, the Sunshine Squad has worked tirelessly to develop a website that not only lifts moods but also brightens spirits. Through collaborative effort, innovative ideas, and a commitment to excellence, the team has transformed their vision into reality, delivering a platform that radiates warmth and boundless optimism.
