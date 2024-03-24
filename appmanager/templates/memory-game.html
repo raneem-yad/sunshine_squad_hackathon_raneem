@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<main>
+    <h3 id="memory-game-header">Click the cards below to match the happy icons!</h3>
+    <div id="prompt"> </div><h4 id="counter"></h4>
     <table id="memory-game">
         <tr>
             <td class="game-card"><i id="fa-face-smile-0" class="fa-solid fa-question"></i></td>
@@ -27,8 +28,8 @@
             <td class="game-card"><i id="fa-dog-1" class="fa-solid fa-question"></i></td>
         </tr>
     </table>
-    <div id="found-itmes">
-        <p>Found Items:</p>
+    <div id="found-items">
+        <p><span id="found-items-score">8</span> Items left to find:</p>
         <i id="fa-face-smile" class="not-found fa-xl fa-solid fa-face-smile"></i>
         <i id="fa-face-laugh" class="not-found fa-xl fa-solid fa-face-laugh"></i>
         <i id="fa-face-grin-squint-tears" class="not-found fa-xl fa-solid fa-face-grin-squint-tears"></i>
@@ -38,8 +39,6 @@
         <i id="fa-hand-peace" class="not-found fa-xl fa-solid fa-hand-peace"></i>
         <i id="fa-heart" class="not-found fa-xl fa-solid fa-heart"></i>
     </div>
-</main>
-
 {% endblock %}
 
 

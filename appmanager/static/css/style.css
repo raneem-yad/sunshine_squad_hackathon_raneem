@@ -147,9 +147,24 @@ table {
   margin:auto;
   font-size:xx-large;
   max-width:500px;
+  min-width:310px;
 }
 
-#memory-game td:hover{
+#prompt, #counter{
+  height:20px;
+  margin-bottom: 10px;
+}
+
+#found-items{
+  margin-bottom: 10px;
+}
+
+#memory-game-header{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+#memory-game i:hover{
   cursor: pointer;  
 }
 
@@ -165,10 +180,24 @@ table {
   border-radius:.4rem;
   border-style: solid;
   background-color: rgb(78, 114, 190);
-  margin-left:55px;
-  margin-right:55px;
+  margin-left:10px;
+  margin-right:10px;
+  box-shadow: 10px 5px 5px black;
 }
 
+@media (max-width:448px){
+  #memory-game i {
+    margin-left:2px;
+    margin-right:2px;
+  }
+}
+
+@media (min-width:665px){
+  #memory-game i {
+    margin-left:55px;
+    margin-right:55px;
+  }
+}
 /* Emoji capture game */
 .scores-container {
   display: flex;
@@ -228,14 +257,10 @@ table {
   background-position: center;
   background-size: cover;
 }
-<<<<<<< HEAD
-/* Game button styling */
-=======
 .emoji-bt {
   background-position: center;
   background-size: cover;
 }
->>>>>>> 1536e0468c5d77b72176e5326f4e74c2cb28ead0
 
 .flex-container {
   display: flex;
