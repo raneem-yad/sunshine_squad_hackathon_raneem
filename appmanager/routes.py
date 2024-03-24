@@ -11,7 +11,7 @@ def home(page_index=1):
         data = session['articles']
     else:
         # data = get_data_from_demo()
-        data = get_articles_from_api(page_index)
+        data = get_articles_from_api()
         # stores all articles in session
         session['articles'] = data
     # data = get_data_from_demo()
