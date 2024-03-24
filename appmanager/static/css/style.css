@@ -95,6 +95,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.container {
+display: none;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -572,6 +576,16 @@ footer i {
   .slider {
     width: 90%;
     border-radius: 0.5rem;
+  }
+  .container {
+    display: block;
+
+  }
+
+  .emoji-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
 }
