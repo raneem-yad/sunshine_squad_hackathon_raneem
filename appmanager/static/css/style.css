@@ -1,13 +1,9 @@
 /* Font for title */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 
 /*This is the main stylesheet for the website. It is used to style the website and make it look more appealing to the user.*/
 /*This stylesheet is linked to all the pages of the website.*/
-
 /* Remove the default proprties */
 * {
   box-sizing: border-box;
@@ -16,7 +12,7 @@
 }
 
 html,
-body { 
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.4em;
@@ -51,9 +47,7 @@ body {
   background-size: cover;
 }
 
-
 /* Hero section */
-
 #hero {
   height: 350px;
   width: 100%;
@@ -66,7 +60,8 @@ body {
   width: 100%;
   background: url(../images/sunshinesquad.avif) no-repeat center center/cover;
 }
- /* Add zoom to the hero image  and level zoom */
+
+/* Add zoom to the hero image  and level zoom */
 #hero-image {
   animation-name: zoom-hero;
   animation-duration: 10s;
@@ -77,6 +72,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
@@ -99,118 +95,119 @@ body {
 }
 
 .container-emoji {
-display: none;
+  display: none;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-    flex: 1;
+  flex: 1;
 }
 
 /* Navbar */
 .main-nav {
- background-color: rgb(242, 242, 160);
+  background-color: rgb(242, 242, 160);
 }
 
 .logo-title {
-    font-family: "Darumadrop One", sans-serif;
+  font-family: "Darumadrop One", sans-serif;
 }
 
 /* Tic Tac Toe */
-#game-table{
-    width:80%;
-    margin:auto;
-    height:500px;
+#game-table {
+  width: 80%;
+  margin: auto;
+  height: 500px;
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-#message{
-    height:50px;
+#message {
+  height: 50px;
 }
 
-#game-table td{
-    border-style: solid;
-    border-width:5px;
-    border-color: black;
-    width:33.33%;
-    height:33.33%;
-    margin:0 0 0 0;
-    font-size:xx-large;
-    text-align: center;
-    color:white;
+#game-table td {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  width: 33.33%;
+  height: 33.33%;
+  margin: 0 0 0 0;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
 }
 
 table {
-    border-spacing: 0px;
+  border-spacing: 0px;
 }
-
 
 /* Memory Game */
-#memory-game{
-  height:400px;
-  width:75%;
-  margin:auto;
-  font-size:xx-large;
-  max-width:500px;
-  min-width:310px;
+#memory-game {
+  height: 400px;
+  width: 75%;
+  margin: auto;
+  font-size: xx-large;
+  max-width: 500px;
+  min-width: 310px;
 }
 
-#prompt, #counter{
-  height:20px;
+#prompt,
+#counter {
+  height: 20px;
   margin-bottom: 10px;
 }
 
-#found-items{
+#found-items {
   margin-bottom: 10px;
 }
 
-#memory-game-header{
-  margin-top:10px;
-  margin-bottom:10px;
+#memory-game-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#memory-game i:hover{
-  cursor: pointer;  
+#memory-game i:hover {
+  cursor: pointer;
 }
 
-.not-found{
-  color:rgb(166, 166, 166);
+.not-found {
+  color: rgb(166, 166, 166);
 }
 
-#memory-game i{
-  width:80%;
-  padding-top:15%;
-  height:80%;
+#memory-game i {
+  width: 80%;
+  padding-top: 15%;
+  height: 80%;
   border-width: 2px;
-  border-radius:.4rem;
+  border-radius: .4rem;
   border-style: solid;
   background-color: rgb(78, 114, 190);
-  margin-left:10px;
-  margin-right:10px;
+  margin-left: 10px;
+  margin-right: 10px;
   box-shadow: 10px 5px 5px black;
 }
 
-@media (max-width:448px){
+@media (max-width:448px) {
   #memory-game i {
-    margin-left:2px;
-    margin-right:2px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
 
-@media (min-width:665px){
+@media (min-width:665px) {
   #memory-game i {
-    margin-left:55px;
-    margin-right:55px;
+    margin-left: 55px;
+    margin-right: 55px;
   }
 }
+
 /* Emoji capture game */
 .scores-container {
   display: flex;
@@ -263,61 +260,11 @@ table {
   border-radius: 30px;
   background: rgb(248, 165, 165);
 }
-
-/* JavaScript */
 .emoji {
   background-image: url("https://i.guim.co.uk/img/media/a1b7129c950433c9919f5670c92ef83aa1c682d9/55_344_1971_1183/master/1971.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=88ba2531f114b9b58b9cb2d8e723abe1");
   background-position: center;
   background-size: cover;
 }
-
-
-/* Game button styling
-.game-button {
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-}
-
-.game-button button {
-  display: block;
-  width: 200%;
-  height: 100%;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.game-button button:hover {
-  background-color: #0056b3;
-}
-
-/* Style for Tic Tac Toe button 
-.game-button:nth-of-type(1) button {
-  background-image: url(../images/tictactoe.jpg);
-  background-size: cover;
-}
-
-/* Style for Memory Game button 
-.game-button:nth-of-type(2) button {
-  background-image: url(../images/memorygame.jpg);
-  background-size: cover;
-}
-
-/* Style for Emoji Catcher button 
-.tic-tac-toe {
-  background-image: url(../images/tictactoe.jpg);
-  background-size: cover;
-}
-.game-button:nth-of-type(3) button {
-  background-image: url(../images/emojicatcher.jpg);
-  background-size: cover;
-}
-
-*/
 
 /* Title and description */
 .page-title {
@@ -353,34 +300,36 @@ table {
 /* First row */
 #game-table tr:nth-child(1) td:nth-child(1),
 #game-table tr:nth-child(1) td:nth-child(2),
-#game-table tr:nth-child(1) td:nth-child(3){
+#game-table tr:nth-child(1) td:nth-child(3) {
 
-    border-top: none
+  border-top: none
 }
+
 /* last row */
 #game-table tr:nth-child(3) td:nth-child(1),
 #game-table tr:nth-child(3) td:nth-child(2),
-#game-table tr:nth-child(3) td:nth-child(3){
+#game-table tr:nth-child(3) td:nth-child(3) {
 
-    border-bottom: none
+  border-bottom: none
 }
+
 /* left side */
 #game-table tr:nth-child(1) td:nth-child(1),
 #game-table tr:nth-child(2) td:nth-child(1),
-#game-table tr:nth-child(3) td:nth-child(1){
+#game-table tr:nth-child(3) td:nth-child(1) {
 
-    border-left: none
+  border-left: none
 }
+
 /* right side */
 #game-table tr:nth-child(1) td:nth-child(3),
 #game-table tr:nth-child(2) td:nth-child(3),
-#game-table tr:nth-child(3) td:nth-child(3){
+#game-table tr:nth-child(3) td:nth-child(3) {
 
-    border-right: none
+  border-right: none
 }
 
 /* Mood selector */
-
 .feeling {
   font-size: 2rem;
   padding: 1rem;
@@ -412,15 +361,14 @@ table {
   padding: 0.5rem;
 }
 
-a.nav-link { 
-    text-align: center;
-    border: 0.1rem solid rgb(70, 68, 68);
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-    background-color: orange;
-   
+a.nav-link, .btn-warning {
+  text-align: center;
+  border: 0.1rem solid rgb(70, 68, 68);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  background-color: orange;
 }
 
 /* Change the color of the button when hovered */
@@ -441,12 +389,11 @@ a.nav-link:hover {
 }
 
 /* News */
-
 .news-page .news-image {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 
 .caption {
@@ -455,7 +402,7 @@ a.nav-link:hover {
   font-size: 0.8rem;
 }
 
-.article-title{
+.article-title {
   padding-top: 1rem;
   font-size: 1rem;
   color: rgb(20, 20, 20);
@@ -464,7 +411,6 @@ a.nav-link:hover {
 }
 
 /* News details page */
-
 .article-details {
   margin: 15px 5%;
 }
@@ -473,7 +419,7 @@ a.nav-link:hover {
   width: 100%;
 }
 
-.article-title-details{
+.article-title-details {
   padding: 1rem 0;
   font-size: 1.5rem;
   color: rgb(20, 20, 20);
@@ -495,7 +441,7 @@ a.nav-link:hover {
 }
 
 /* Hover effect to show the news title */
-.card:hover  .news-title {
+.card:hover .news-title {
   display: block;
 }
 
@@ -509,14 +455,13 @@ a.nav-link:hover {
 
 /* Styles For funny cards */
 div.card-body {
-  
+
   border: 0.1rem solid rgb(70, 68, 68);
-    box-shadow: 0.2rem 0.2rem;
-    border-radius: 0.3rem; 
+  box-shadow: 0.2rem 0.2rem;
+  border-radius: 0.3rem;
 }
 
 /* emoji */
-
 #big-emoji {
   font-size: 5rem;
   padding: 2rem;
@@ -525,9 +470,12 @@ div.card-body {
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -544,23 +492,23 @@ div.card-body {
 }
 
 /***  Gallery Page ***/
-.carousel-inner img{
-    height: 80vh
+.carousel-inner img {
+  height: 80vh
 }
 
 /* Footer position at the bottom of the page */
 footer {
-  background-color: rgb(242, 242, 160); 
+  background-color: rgb(242, 242, 160);
   left: 0;
   bottom: 0;
-  width: 100%; 
+  width: 100%;
   bottom: 0;
 }
 
 /* Footer styling icons */
 footer i {
   font-size: 2rem;
-  padding: 0 5rem;  
+  padding: 0 5rem;
 }
 
 /* Contributors */
@@ -580,37 +528,44 @@ footer i {
 }
 
 @media only screen and (min-width: 1024px) {
-  .container-game{
+  .container-game {
     margin-bottom: 5%;
-}
+  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px),(orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 480px),
+(orientation: portrait) {
   .news-page .news-image {
-     width: 95%;
-   }
-   .mb-4 {
+    width: 95%;
+  }
+
+  .mb-4 {
     font-size: 2rem;
-   }
-   #carusel-container img {
+  }
+
+  #carusel-container img {
     width: 100%;
     height: auto;
     object-fit: contain;
-   }
-   #hero-text h1 {
+  }
+
+  #hero-text h1 {
     font-size: 2rem;
     width: 90%;
   }
-  .mood-selector, .feeling {
+
+  .mood-selector,
+  .feeling {
     display: none;
   }
+
   .slider {
     width: 90%;
     border-radius: 0.5rem;
   }
-  .container {
-    display: block;
 
+  .container-emoji {
+    display: block;
   }
 
   .emoji-title {
@@ -619,12 +574,15 @@ footer i {
     text-transform: uppercase;
   }
 
+  footer i {
+    font-size: 2rem;
+    padding: 0 2rem;
+    display: inline;
+  }
 }
-
 
 @media screen and (max-width: 580px) {
-    .logo-title {
-        font-size: 90%;
-    }
+  .logo-title {
+    font-size: 90%;
+  }
 }
-
