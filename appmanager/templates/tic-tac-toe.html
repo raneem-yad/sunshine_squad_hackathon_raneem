@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+<a href="{{url_for('game')}}" class="btn btn-warning go-back-game">Back to game selection</a>
 <main>
-    <div id="game-area">
+    <div class="game-area">
         <h1>Tic Tac Toe</h1>
         <h2 id="message"></h2>
         <h2>Score:<span id="score">0</span></h2>
         <button id='new-game'>New Game</button>
-        <table id="game-table" class="hidden">
+        <table id="game-table">
             <tr>
                 <td id='0-0' class="game-cell"><i class="fa-2xl fa-solid"></i></td>
                 <td id='0-1' class="game-cell"><i class="fa-2xl fa-solid"></i></td>

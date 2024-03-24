@@ -154,6 +154,12 @@ table {
 
 
 /* Memory Game */
+.go-back-game{
+  margin-top:10px;
+  float:right;
+  margin-right:20px;
+}
+
 #memory-game{
   height:400px;
   width:75%;
@@ -341,7 +347,7 @@ table {
 
 /* Game Area */
 /* Center the game area on the page */
-#game-area {
+.game-area {
   display: flex;
   justify-content: center;
   align-items: center;
