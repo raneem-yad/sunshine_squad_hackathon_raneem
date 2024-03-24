@@ -1,6 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 <main>
+<<<<<<< HEAD
+    <div class="row flex-container">
+        <div class="col">
+            <a href="{{url_for('tic_tac_toe')}}" class="game-button">
+                <button>
+                    Tic Tac Toe
+                </button>
+        </div>
+        <div class="col">
+            </a>
+            <a href="{{url_for('memory_game')}}" class="game-button">
+                <button>
+                    Memory Game
+                </button>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{{url_for('emoji_catcher')}}" class="game-button">
+                <button>
+                    Emoji Catcher
+                </button>
+            </a>
+        </div>
+    </div>
+=======
     <a href="{{url_for('tic_tac_toe')}}">
         <button>
             Tic Tac Toe
@@ -16,6 +41,7 @@
             Emoji Catcher
         </button>
     </a>
+>>>>>>> 1536e0468c5d77b72176e5326f4e74c2cb28ead0
 </main>
 
 {% endblock %}

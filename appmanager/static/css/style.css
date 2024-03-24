@@ -228,11 +228,65 @@ table {
   background-position: center;
   background-size: cover;
 }
+<<<<<<< HEAD
+/* Game button styling */
+=======
 .emoji-bt {
   background-position: center;
   background-size: cover;
 }
+>>>>>>> 1536e0468c5d77b72176e5326f4e74c2cb28ead0
 
+.flex-container {
+  display: flex;
+  height: 50%;
+}
+
+.col-xl-3 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px;
+}
+
+.game-button {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.game-button button {
+  display: block;
+  width: 200%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.game-button button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for Tic Tac Toe button */
+.game-button:nth-of-type(1) button {
+  background-image: url(../images/tictactoe.jpg);
+  background-size: cover;
+}
+
+/* Style for Memory Game button */
+.game-button:nth-of-type(2) button {
+  background-image: url(../images/memorygame.jpg);
+  background-size: cover;
+}
+
+/* Style for Emoji Catcher button */
+.game-button:nth-of-type(3) button {
+  background-image: url(../images/emojicatcher.jpg);
+  background-size: cover;
+}
 
 /* Title and description */
 .page-title {
@@ -253,6 +307,7 @@ table {
   font-size: 0.8rem;
   padding: 30px;
 }
+
 /* Game Area */
 /* Center the game area on the page */
 #game-area {
@@ -325,7 +380,6 @@ table {
   content: attr(data-emoji);
   padding: 0.5rem;
 }
-
 
 /* News */
 
@@ -424,14 +478,13 @@ div.card-body {
   font-size: 2.5rem;
   padding: 1rem;
   cursor: pointer;
-
 }
 
 .small-emojis {
   padding-top: 1rem;
 }
 
-/***     Gallery Page ***/
+/***  Gallery Page ***/
 .carousel-inner img{
     height: 80vh
 }
