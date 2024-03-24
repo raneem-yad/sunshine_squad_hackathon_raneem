@@ -98,7 +98,7 @@ body {
   padding: 1rem;
 }
 
-.container {
+.container-emoji {
 display: none;
 }
 
@@ -412,6 +412,34 @@ table {
   padding: 0.5rem;
 }
 
+a.nav-link { 
+    text-align: center;
+    border: 0.1rem solid rgb(70, 68, 68);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    background-color: orange;
+   
+}
+
+/* Change the color of the button when hovered */
+a.nav-link:hover {
+  background-color: rgba(82, 80, 78, 0.295);
+  cursor: pointer;
+}
+
+/* Change the color of the button when clicked */
+.btn:active {
+  transform: translateY(0.2rem);
+  box-shadow: none;
+}
+
+/* Change the color of the button when focused */
+.btn:focus {
+  outline: none;
+}
+
 /* News */
 
 .news-page .news-image {
@@ -599,4 +627,4 @@ footer i {
         font-size: 90%;
     }
 }
-}
+
