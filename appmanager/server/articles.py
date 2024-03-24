@@ -1,6 +1,6 @@
 import requests
 
-from appmanager.server.demo_data import data_demo
+from appmanager.server.demo_data import new_demo_data
 from appmanager.utils.constants import happy_keywords
 from appmanager.utils.helper import create_query
 
@@ -26,23 +26,23 @@ def get_articles_by_positivity(articles):
 
 def get_data_from_demo():
 
-    data = get_articles_by_positivity(data_demo)
+    data = get_articles_by_positivity(new_demo_data)
     return data
 
 
-def get_articles_from_api(page):
+def get_articles_from_api():
     raneem_api_key = "9392d0dd-e231-49f4-a95a-1a969994a161"
     mark_api_key = "c9ae261e-e1d6-416e-9158-57cf76b67d7d"
     abd_api_key = "7e1deaad-bc38-497a-af70-1c842bb7b9bd"
     carlos_api_key = "6411925c-7e69-479c-b8a3-55a82f2e4671"
     api_url = "https://api.goperigon.com/v1/all/"
     params = {
-        'from': '2024-02-20',
+        # 'from': '2024-02-20',
         'q': create_query(happy_keywords),  # Keywords for happy news
-        'sourceGroup': 'top10',
+        'sourceGroup': 'top1000',
         'language': 'en',
-        'page': page,
-        'size': 500,
+        # 'page': 1,
+        # 'size': 200,
         'apiKey': carlos_api_key
 
     }
@@ -52,15 +52,16 @@ def get_articles_from_api(page):
         response.raise_for_status()  # Raise an exception for 4xx and 5xx status codes
         response_data = response.json()
         articles = response_data.get('articles', [])
+        numResults = response_data.get('numResults', 0)
         print("---------------------------------------------here")
-        print(f"data after  is ${articles} and data length is ${len(articles)}")
+        print(f" numResults {numResults} articles after  is ${response_data} and data length is ${len(articles)}")
         # Taking the first 6 articles
-        # data = articles
-        data = get_articles_by_positivity(articles)
+        data = articles
+        # data = get_articles_by_positivity(articles)
 
         # print(response)
-        # print("---------------------------------------------here")
-        # print(f"data after  is ${articles} and data length is ${len(articles)}")
+        print("---------------------------------------------here")
+        # print(f"data after  is {data} and data length is {len(data)}")
     except requests.exceptions.RequestException as e:
         # res = jsonify({'error': str(e)}), 500
         data = {'error': str(e)}

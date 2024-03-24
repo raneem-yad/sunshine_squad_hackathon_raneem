@@ -7,12 +7,12 @@ from appmanager.server.constants import jokes, happy_emojis
 @app.route("/")
 @app.route("/<int:page_index>")
 def home(page_index=1):
-    # data = get_articles_from_api(page)
+    # data  = get_articles_from_api()
     data = get_data_from_demo()
     # stores all articles in session
     session['articles'] = data
     # Define pagination parameters
-    items_per_page = 6
+    items_per_page = 8
     num_pages = int(len(data) / items_per_page)
 
     # Calculate start and end indices for pagination
@@ -20,11 +20,16 @@ def home(page_index=1):
     end_index = start_index + items_per_page
 
     # Extract articles for the current page
-    articles_for_page = data[start_index:end_index]
-    # print(f"print ${start_index} and end ${end_index} and len ${len(articles_for_page)}")
+    print(type(data))
+    print(f"type after list ${type(list(data))}")
+    print(f"first item from list { list(data)[0]}")
+    print(f"len item from list {len(list(data))}")
+    articles_for_page =  data[start_index:end_index]
 
+    # print(f"print ${start_index} and end ${end_index} and len ${len(data)}")
+    print("-------------------------------------")
     return render_template("home.html", result=articles_for_page, total_pages=num_pages, page=page_index)
-
+    # return "Hello"
 
 @app.route("/game")
 def game():

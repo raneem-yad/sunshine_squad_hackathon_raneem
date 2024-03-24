@@ -51,16 +51,15 @@
 <!--ToDo : // check if there is no results or error then show message -->
 
 
-{% set valid_page = page is not none %}
 {% if total_pages > 1 %}
 <div>
-    {% if valid_page and page > 1 %}
+    {% if page > 1 %}
     <a href="/{{ page - 1 }}">Previous</a>
     {% endif %}
 
     Page {{ page }} of {{total_pages}}
 
-    {% if valid_page and page < total_pages %} <a href="/{{  page + 1 }}">Next</a>
+    {% if  page < total_pages %} <a href="/{{  page + 1 }}">Next</a>
         {% endif %}
 </div>
 {% endif %}
