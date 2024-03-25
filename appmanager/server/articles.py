@@ -45,7 +45,7 @@ def get_articles_from_api(page):
         'language': 'en',
         'page': page,
         'size': 8,
-        'apiKey': arathi_api_key
+        'apiKey': abd_api_key
 
     }
 

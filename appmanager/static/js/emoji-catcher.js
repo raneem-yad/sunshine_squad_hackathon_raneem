@@ -1,4 +1,4 @@
-const squares = document.querySelectorAll(".square");
+const squares = document.querySelectorAll(".square-style");
 const timeLeft = document.querySelector("#time-left");
 const score = document.querySelector("#score");
 
