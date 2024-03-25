@@ -1,104 +1,126 @@
 {% extends "base.html" %}
 <div class="main">
     {% block content %}
-    <div class="container mt-4">
-        <div class="row">
+    <div class="container mt-2">
+        <div class=" col-12 col-md-10 text-center py-3 mb-2">
+            <h2 class="happy-contributors mt-3 mb-2">Happy Contributors <i class="fa-regular fa-face-smile-beam"></i></h2>
+            <hr class="border-happy-contributors">
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-10">
+                <img class="col-12 col-md-2 circular-img float-right"
+                    src="{{ url_for('static', filename='images/contributors/alex-small.jpeg') }}"
+                    alt="contributor image">
+                <div class="col-12 col-md-8 mb-4">
+                    <h3>Alex Small</h3>
+                    <a href="https://github.com/AlexSmall96/alex_sunshine_squad" target="_blank" rel="noopener">
+                        <h4>GitHub</h4>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alex-small-a8977116b/" target="_blank" rel="noopener">
+                        <h4>LinkedIn</h4>
+                    </a>
+                </div>
+                <hr class="border-happy-contributors">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-10">
+                <img class="col-12 col-md-2 circular-img float-right"
+                    src="{{ url_for('static', filename='images/contributors/arathi-variar.jpeg') }}"
+                    alt="contributor image">
+                <div class="col-12 col-md-8 mb-4">
+                    <h3>Arathi Variar</h3>
+                    <a href="https://github.com/arathivariar" target="_blank" rel="noopener">
+                        <h4>GitHub</h4>
+                    </a>
+                    <a href=" https://www.linkedin.com/in/arathi-variar/" target="_blank" rel="noopener">
+                        <h4>LinkedIn</h4>
+                    </a>
+                </div>
+                <hr class="border-happy-contributors">
+            </div>
+        </div>
+        <div class="row mb-3">
             <div class="col-12 col-md-10 mb-3">
                 <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/carlos-felipe-sandoli.png') }}" alt="contributor image">
+                    src="{{ url_for('static', filename='images/contributors/carlos-felipe-sandoli.png') }}"
+                    alt="contributor image">
                 <div class="col-12 col-md-8 mb-4">
                     <h3>Carlos Felipe Sandoli</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/felipesandoli" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href="https://www.linkedin.com/in/felipesandoli/" target="_blank" rel="noopener">link</a></li>
-                    </ul>
+                    <a href="https://github.com/felipesandoli" target="_blank" rel="noopener">
+                        <h4>GitHub</h4>
+                    </a>
+                    <a href="https://www.linkedin.com/in/felipesandoli/" target="_blank" rel="noopener">
+                        <h4>LinkedIn</h4>
+                    </a>
                 </div>
-                <hr>
+                <hr class="border-happy-contributors">
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-12 col-md-10">
                 <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/elina-boman.png') }}" alt="contributor image">
-                    <div class="col-12 col-md-8 mb-4">
-                    <h3>Elina Boman</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/ElinaBoman" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href="https://www.linkedin.com/in/elina-boman-310164185/" target="_blank" rel="noopener">link</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-10">
-                <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/raneem-yad.png') }}" alt="contributor image">
-                    <div class="col-12 col-md-8 mb-4">
-                    <h3>Raneem Yad</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/raneem-yad" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href="https://www.linkedin.com/in/raneem-yad/" target="_blank" rel="noopener">link</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-10">
-                <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/alex-small.jpeg') }}" alt="contributor image">
-                    <div class="col-12 col-md-8 mb-4">
-                    <h3>Alex Small</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/AlexSmall96/alex_sunshine_squad" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href="https://www.linkedin.com/in/alex-small-a8977116b/" target="_blank" rel="noopener">link</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-10">
-                <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/arathi-variar.jpeg') }}" alt="contributor image">
-                    <div class="col-12 col-md-8 mb-4">
-                    <h3>Arathi Variar</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/arathivariar" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href=" https://www.linkedin.com/in/arathi-variar/" target="_blank" rel="noopener">link</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-10">
-                <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/mark-young.jpeg') }}" alt="contributor image">
-                    <div class="col-12 col-md-8 mb-4">
-                    <h3>Mark Young</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/Markyjay" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href="http://www.linkedin.com/in/mark-young-4a90ab15" target="_blank" rel="noopener">link</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-10">
-                <img class="col-12 col-md-2 circular-img float-right"
-                    src="{{ url_for('static', filename='images/contributors/denis-kudriavcev.jpeg')}}" alt="contributor image">
-                    <div class="col-12 col-md-8 mb-4">
+                    src="{{ url_for('static', filename='images/contributors/denis-kudriavcev.jpeg')}}"
+                    alt="contributor image">
+                <div class="col-12 col-md-8 mb-4">
                     <h3>Denis Kudriavcev</h3>
-                    <ul class="contributors-ul">
-                        <li>GitHub <a href="https://github.com/AleksandrDenis" target="_blank" rel="noopener">link</a></li>
-                        <li>LinkedIn <a href="https://www.linkedin.com/in/denis-kudriavcev/" target="_blank" rel="noopener">link</a></li>
+                    <a href="https://github.com/AleksandrDenis" target="_blank" rel="noopener">
+                        <h4>GitHub</h4>
+                    </a>
+                    <a href="https://www.linkedin.com/in/denis-kudriavcev/" target="_blank" rel="noopener">
+                        <h4>LinkedIn</h4>
+                    </a>
                     </ul>
                 </div>
-                <hr>
+                <hr class="border-happy-contributors">
             </div>
+        </div>
+    <div class="row mb-3">
+        <div class="col-12 col-md-10">
+            <img class="col-12 col-md-2 circular-img float-right"
+                src="{{ url_for('static', filename='images/contributors/elina-boman.png') }}" alt="contributor image">
+            <div class="col-12 col-md-8 mb-4">
+                <h3>Elina Boman</h3>
+                <a href="https://github.com/ElinaBoman" target="_blank" rel="noopener">
+                    <h4>GitHub</h4>
+                </a>
+                <a href="https://www.linkedin.com/in/elina-boman-310164185/" target="_blank" rel="noopener">
+                    <h4>LinkedIn</h4>
+                </a>
+            </div>
+            <hr class="border-happy-contributors">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-12 col-md-10">
+            <img class="col-12 col-md-2 circular-img float-right"
+                src="{{ url_for('static', filename='images/contributors/mark-young.jpeg') }}" alt="contributor image">
+            <div class="col-12 col-md-8 mb-4">
+                <h3>Mark Young</h3>
+                <a href="https://github.com/Markyjay" target="_blank" rel="noopener">
+                    <h4>GitHub</h4>
+                </a>
+                <a href="http://www.linkedin.com/in/mark-young-4a90ab15" target="_blank" rel="noopener">
+                    <h4>LinkedIn</h4>
+                </a>
+            </div>
+            <hr class="border-happy-contributors">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-12 col-md-10">
+            <img class="col-12 col-md-2 circular-img float-right"
+                src="{{ url_for('static', filename='images/contributors/raneem-yad.png') }}" alt="contributor image">
+            <div class="col-12 col-md-8 mb-4">
+                <h3>Raneem Yad</h3>
+                <a href="https://github.com/raneem-yad" target="_blank" rel="noopener">
+                    <h4>GitHub</h4>
+                </a>
+                <a href="https://www.linkedin.com/in/raneem-yad/" target="_blank" rel="noopener">
+                    <h4>LinkedIn</h4>
+                </a>
+            </div>
+            <hr class="border-happy-contributors">
         </div>
     </div>
     {% endblock %}
