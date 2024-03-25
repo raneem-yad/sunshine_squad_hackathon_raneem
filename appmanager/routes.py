@@ -11,7 +11,7 @@ def home(page_index=1):
         data = session['articles']
     else:
         # data = get_data_from_demo()
-        data = get_articles_from_api()
+        data = get_articles_from_api(page_index)
         # stores all articles in session
         session['articles'] = data
     # data = get_data_from_demo()
@@ -32,7 +32,7 @@ def home(page_index=1):
 
     # print(f"print ${start_index} and end ${end_index} and len ${len(data)}")
     print("-------------------------------------")
-    return render_template("home.html", result=data, total_pages=6, page=page_index)
+    return render_template("home.html", result=data, total_pages=len(data), page=page_index)
 
 
 @app.route("/game")
