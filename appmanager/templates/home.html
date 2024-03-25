@@ -84,33 +84,9 @@
     </div>
 </div>
 
-<div class="container-emoji">
-    <p class="emoji-title">Choose your emoji and get inspired!</p>
-    <div id="big-emoji">😄</div>
-
-    <div class="small-emojis">
-        <span class="emoji-bt" onclick="showPicture('🌞')">🌞</span>
-        <span class="emoji-bt" onclick="showPicture('😄')">😄</span>
-        <span class="emoji-bt" onclick="showPicture('🌈')">🌈</span>
-    </div>
-</div>
-
-</div>
-<!--ToDo : // check if there is no results or error then show message -->
 
 
-{% if total_pages > 1 %}
-<div>
-    {% if page > 1 %}
-    <a href="/{{ page - 1 }}">Previous</a>
-    {% endif %}
 
-    Page {{ page }} of {{total_pages}}
-
-    {% if  page < total_pages %} <a href="/{{  page + 1 }}">Next</a>
-        {% endif %}
-</div>
-{% endif %}
 
 
 {% endblock %}

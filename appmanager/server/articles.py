@@ -30,7 +30,7 @@ def get_data_from_demo():
     return data
 
 
-def get_articles_from_api(page):
+def get_articles_from_api():
     raneem_api_key = "9392d0dd-e231-49f4-a95a-1a969994a161"
     mark_api_key = "c9ae261e-e1d6-416e-9158-57cf76b67d7d"
     abd_api_key = "7e1deaad-bc38-497a-af70-1c842bb7b9bd"
@@ -43,7 +43,7 @@ def get_articles_from_api(page):
         'topic': 'Good News',
         'sourceGroup': 'top1000',
         'language': 'en',
-        'page': page,
+        'page': 1,
         'size': 8,
         'apiKey': abd_api_key
 
@@ -55,17 +55,7 @@ def get_articles_from_api(page):
         response_data = response.json()
         articles = response_data.get('articles', [])
         numResults = response_data.get('numResults', 0)
-        print("---------------------------------------------here")
-        print(f" numResults {numResults} articles after  is ${response_data} and data length is ${len(articles)}")
-        # Taking the first 6 articles
         data = articles
-        # data = get_articles_by_positivity(articles)
-
-
-        # print(response)
-        print("---------------------------------------------here")
-        # print(f"data after  is {data} and data length is {len(data)}")
     except requests.exceptions.RequestException as e:
-        # res = jsonify({'error': str(e)}), 500
         data = {'error': str(e)}
     return data
