@@ -72,20 +72,20 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 ## Wireframes
 
 - Homepage Wireframe
-![Homepage Wireframe](readme/newwireframe1.png)
+[Homepage Wireframe](readme/newwireframe1.png)
 
 - Create Booking Wireframe
-![Game Wireframe](readme/newwireframe2.png)
+[Game Wireframe](readme/newwireframe2.png)
 
 # Features
 
 A mood dial to alter the color depending on your current diposition. And an interactive display of emojis where the user can recieve various uplifting quotes to brighten mood.
 
-![Mood Dial with Quotes](/appmanager/static/images/mooddialandquotes.jpg)
+![Mood Dial with Quotes](/appmanager/static/images/hero.png)
 
 The user can search through positive news feeds to increase mood and faith in humanity.
 
-![News Feed](/appmanager/static/images/newsfeed.jpg)
+![News Feed](/appmanager/static/images/articles.png)
 
 The user has a choice of three games to highten adreniline.
 
