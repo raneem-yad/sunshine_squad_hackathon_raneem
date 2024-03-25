@@ -519,6 +519,10 @@ footer i {
   padding: 0 5rem;
 }
 
+.footer-icon:hover {
+  font-weight: bolder;
+}
+
 /* Contributors */
 .circular-img {
   border-radius: 50%;
