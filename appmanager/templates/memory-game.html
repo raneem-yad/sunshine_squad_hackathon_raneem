@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <a href="{{url_for('game')}}" class="btn btn-warning go-back-game">Back to game selection</a>
-<main>
+<main class="mb-5">
     <div class="game-area">
     <a href="{{url_for('memory_game')}}" class="btn btn-warning">New Game</a>
     <h3 id="memory-game-header">Click the cards below to match the happy icons!</h3>
     <div id="prompt"> </div><h4 id="counter"></h4>
     
-    <table id="memory-game">
+    <table id="memory-game" >
         <tr>
             <td class="game-card"><i id="fa-face-smile-0" class="fa-solid fa-question"></i></td>
             <td class="game-card"><i id="fa-face-laugh-0" class="fa-solid fa-question"></i></td>
@@ -33,7 +33,7 @@
             <td class="game-card"><i id="fa-dog-1" class="fa-solid fa-question"></i></td>
         </tr>
     </table>
-    <div id="found-items">
+    <div id="found-items" >
         <p><span id="found-items-score">8</span> Items left to find:</p>
         <i id="fa-face-smile" class="not-found fa-xl fa-solid fa-face-smile"></i>
         <i id="fa-face-laugh" class="not-found fa-xl fa-solid fa-face-laugh"></i>
@@ -45,9 +45,9 @@
         <i id="fa-heart" class="not-found fa-xl fa-solid fa-heart"></i>
     </div>
 </div>
-</main>
-{% endblock %}
 
+{% endblock %}
+</main>
 
 {% block contentscript %}
 

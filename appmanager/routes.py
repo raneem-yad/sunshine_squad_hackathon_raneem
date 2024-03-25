@@ -6,13 +6,13 @@ from appmanager.server.constants import jokes, happy_emojis
 
 @app.route("/")
 def home():
-    # if 'articles' in session:
-    #     data = session['articles']
-    # else:
-    #     data = get_articles_from_api(page_index)
-    #     # stores all articles in session
-    #     session['articles'] = data
-    data = get_data_from_demo()
+    if 'articles' in session:
+        data = session['articles']
+    else:
+        data = get_articles_from_api()
+        # stores all articles in session
+        session['articles'] = data
+    # data = get_data_from_demo()
     return render_template("home.html", result=data)
 
 

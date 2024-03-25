@@ -3,19 +3,19 @@
 
 <div class="row pl-2"> <a href="{{url_for('game')}}" class="btn btn-warning go-back-game">Back to game selection</a></div>
     <div class="scores-container row">
-        <div class="col col-sm-6 total-score">
+        <div class="col  total-score">
           <h2>Your Score:</h2>
           <h2 id="score">0</h2>
         </div>
 
-        <div class="col col-sm-6 time">
+        <div class="col  time">
           <h2>Time left:</h2>
           <h2 id="time-left">60</h2>
         </div>
       </div>
-        <div class="row pl-2" >
-        {% for _ in range(10) %}
-            <div class="col col-md-3 col-sm-6" id="squire-grid">
+        <div class="row pl-2 mb-4" >
+        {% for _ in range(12) %}
+            <div class="col py-2" id="squire-grid">
                 <div class="square-style"></div>
             </div>
             {% endfor %}

@@ -207,6 +207,9 @@ table {
     margin-left: 2px;
     margin-right: 2px;
   }
+  #found-items{
+    margin-bottom : 30px
+  }
 }
 
 @media (min-width:665px) {
