@@ -72,10 +72,10 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 ## Wireframes
 
 - Homepage Wireframe
-![Homepage Wireframe](readme/newwireframe1.png)
+[Homepage Wireframe](readme/newwireframe1.png)
 
 - Create Booking Wireframe
-![Game Wireframe](readme/newwireframe2.png)
+[Game Wireframe](readme/newwireframe2.png)
 
 # Features
 
