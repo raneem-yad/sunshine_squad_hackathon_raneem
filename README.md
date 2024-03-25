@@ -9,7 +9,7 @@
 
 
 ## Deployment
-The project is deployed and can be accessed at [March Hackathon-SunshineScoop](https://march-hackathon-sunshine-squad-e5b99e572892.herokuapp.com/).
+The project is deployed and can be accessed at [March Hackathon-SunshineScoop](https://sunshine-raneem-6269e592a098.herokuapp.com/).
 
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
