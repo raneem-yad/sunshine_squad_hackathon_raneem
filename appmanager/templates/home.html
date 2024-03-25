@@ -60,14 +60,29 @@
     <div class="row">
         {% for item in result %}
         <div class="col-12 col-md-4 col-xl-3 my-2">
-            <div class="card shadow h-100 p-3 col-12">
-                <a href="{{url_for('article_details',article_id=loop.index0)}}">
-                    <figure class="news-page m-auto">
-                        <img class="news-image" src="{{item.imageUrl}}" alt="{{item.title}}">
-                        <figcaption class="caption">{{item.authorsByline}} - {{ item.source.domain }}</figcaption>
-                        <h2 class="article-title">{{item.title}}</h2>
-                    </figure>
-                </a>
+            <div class="card  h-100">
+
+                    <img class="card-img-top" src="{{item.imageUrl}}" alt="{{item.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.title}}</h5>
+                      <p class="card-text">{{item.summery}}</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">
+                              <a href="{{url_for('article_details',article_id=loop.index0)}}">
+                              View </a>
+                          </button>
+
+                        </div>
+                        <small class="text-muted">{{item.authorsByline}} </small>
+                      </div>
+                    </div>
+<!--                    <figure class="news-page m-auto">-->
+<!--                        <img class="news-image" src="{{item.imageUrl}}" alt="{{item.title}}">-->
+<!--                        <figcaption class="caption">{{item.authorsByline}} - {{ item.source.domain }}</figcaption>-->
+<!--                        <h2 class="article-title">{{item.title}}</h2>-->
+<!--                    </figure>-->
+
             </div>
         </div>
         {% endfor %}
