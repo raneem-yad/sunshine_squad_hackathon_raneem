@@ -79,21 +79,31 @@ Join us on this journey to spread positivity, foster connections, and brighten e
 
 # Features
 
-A mood dial to alter the color depending on your current diposition. And an interactive display of emojis where the user can recieve various uplifting quotes to brighten mood.
+A mood dial to alter the color depending on your current diposition. And an interactive display of emojis where the user can recieve various uplifting quotes to brighten mood.    
 
-![Mood Dial with Quotes](/appmanager/static/images/hero.png)
 
-The user can search through positive news feeds to increase mood and faith in humanity.
+![Mood Dial with Quotes](/appmanager/static/images/hero.png)    
 
-![News Feed](/appmanager/static/images/articles.png)
 
-The user has a choice of three games to highten adreniline.
 
-![Happy Games](/appmanager/static/images/tictactoe.jpg)
+The user can search through positive news feeds to increase mood and faith in humanity.    
 
-A littany of jokes and cute animals to provide humour and capture the heart of any user.
 
-![Funny Corner](/appmanager/static/images/funnycorner.jpg)
+
+![News Feed](/appmanager/static/images/articles.png)    
+
+
+The user has a choice of three games to highten adreniline.    
+
+
+![Happy Games](/appmanager/static/images/games.png)    
+
+
+A littany of jokes and cute animals to provide humour and capture the heart of any user.    
+
+
+![Funny Corner](/appmanager/static/images/funnycorner.png)    
+
 
 ## Credits
 Sources used
