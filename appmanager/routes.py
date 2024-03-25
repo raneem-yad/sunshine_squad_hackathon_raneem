@@ -5,34 +5,15 @@ from appmanager.server.constants import jokes, happy_emojis
 
 
 @app.route("/")
-@app.route("/<int:page_index>")
-def home(page_index=1):
-    #if 'articles' in session:
-    #    data = session['articles']
+def home():
+    # if 'articles' in session:
+    #     data = session['articles']
     # else:
-        # data = get_data_from_demo()
-    #   data = get_articles_from_api(page_index)
-        # stores all articles in session
-    #   session['articles'] = data
-     data = get_data_from_demo()
-    # Define pagination parameters
-    # items_per_page = 8
-    # num_pages = int(len(data) / items_per_page)
-    #
-    # # Calculate start and end indices for pagination
-    # start_index = (page_index - 1) * items_per_page
-    # end_index = start_index + items_per_page
-    #
-    # # Extract articles for the current page
-    # print(type(data))
-    # print(f"type after list ${type(list(data))}")
-    # print(f"first item from list {list(data)[0]}")
-    # print(f"len item from list {len(list(data))}")
-    # articles_for_page = data[start_index:end_index]
-
-    # print(f"print ${start_index} and end ${end_index} and len ${len(data)}")
-    print("-------------------------------------")
-    return render_template("home.html", result=data, total_pages=len(data), page=page_index)
+    #     data = get_articles_from_api(page_index)
+    #     # stores all articles in session
+    #     session['articles'] = data
+    data = get_data_from_demo()
+    return render_template("home.html", result=data)
 
 
 @app.route("/game")

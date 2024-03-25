@@ -215,6 +215,12 @@ table {
     margin-right: 55px;
   }
 }
+@media screen and (min-width: 768px){
+    #squire-grid .square-style {
+        height: 130px;
+        width: 130px;
+    }
+}
 
 /* Emoji capture game */
 .scores-container {
@@ -268,7 +274,15 @@ table {
   border-radius: 30px;
   background: rgb(248, 165, 165);
 }
-.emoji {
+
+#squire-grid .square-style {
+    height: 92px;
+    width: 92px;
+    border-radius: 30px;
+    background: rgb(248, 165, 165);
+}
+
+#squire-grid .emoji {
   background-image: url("https://i.guim.co.uk/img/media/a1b7129c950433c9919f5670c92ef83aa1c682d9/55_344_1971_1183/master/1971.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=88ba2531f114b9b58b9cb2d8e723abe1");
   background-position: center;
   background-size: cover;
@@ -550,6 +564,10 @@ font-style: normal;
   .container-game {
     margin-bottom: 5%;
   }
+  #squire-grid .square-style {
+        height: 200px;
+        width: 200px;
+   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px),
