@@ -30,11 +30,12 @@ def get_data_from_demo():
     return data
 
 
-def get_articles_from_api():
+def get_articles_from_api(page):
     raneem_api_key = "9392d0dd-e231-49f4-a95a-1a969994a161"
     mark_api_key = "c9ae261e-e1d6-416e-9158-57cf76b67d7d"
-    # abd_api_key = "7e1deaad-bc38-497a-af70-1c842bb7b9bd"
+    abd_api_key = "7e1deaad-bc38-497a-af70-1c842bb7b9bd"
     carlos_api_key = "6411925c-7e69-479c-b8a3-55a82f2e4671"
+    arathi_api_key = "bb1dc794-56d3-4e2a-8330-565783f808b7"
     api_url = "https://api.goperigon.com/v1/all/"
     params = {
         # 'from': '2024-02-20',
@@ -42,9 +43,9 @@ def get_articles_from_api():
         'topic': 'Good News',
         'sourceGroup': 'top1000',
         'language': 'en',
-        # 'page': 1,
-        # 'size': 200,
-        'apiKey': carlos_api_key
+        'page': page,
+        'size': 8,
+        'apiKey': arathi_api_key
 
     }
 
