@@ -14,9 +14,9 @@
         </div>
       </div>
         <div class="row pl-2 mb-4" >
-        {% for _ in range(12) %}
+        {% for i in range(12) %}
             <div class="col py-2" id="squire-grid">
-                <div class="square-style"></div>
+                <div class="square-style" id="square{{ i }}"></div>
             </div>
             {% endfor %}
         </div>

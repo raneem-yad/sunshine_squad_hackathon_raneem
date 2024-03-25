@@ -12,14 +12,17 @@ function randomSquare() {
     square.classList.remove("emoji");
   });
 
-  let randomSqaure = squares[Math.floor(Math.random() * 9) + 1];
-  randomSqaure.classList.add("emoji");
-  hitPosition = randomSqaure.id;
+
+  let randomIndex = Math.floor(Math.random() * squares.length);
+  let randomSquare = squares[randomIndex];
+  randomSquare.classList.add("emoji");
+  hitPosition = randomIndex;
 }
 
-squares.forEach((square) => {
+
+squares.forEach((square, index) => {
   square.addEventListener("mousedown", () => {
-    if (square.id == hitPosition) {
+    if (index == hitPosition) {
       result++;
       score.textContent = result;
       hitPosition = null;
